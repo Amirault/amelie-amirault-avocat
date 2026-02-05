@@ -1,0 +1,63 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "config"
+    label: "Configuration du site"
+    files:
+      - label: "Informations générales"
+        name: "general"
+        file: "content/general.json"
+        fields:
+          - { label: "Nom", name: "name", widget: "string" }
+          - { label: "Titre du site", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Téléphone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Adresse", name: "address", widget: "text" }
+          
+      - label: "Section À propos"
+        name: "about"
+        file: "content/about.json"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Introduction", name: "intro", widget: "markdown" }
+          - { label: "Paragraphe principal", name: "main_text", widget: "markdown" }
+          - { label: "Texte formations", name: "training_text", widget: "markdown" }
+          - { label: "Langues", name: "languages", widget: "string" }
+          - { label: "Badge - Nombre", name: "badge_number", widget: "string" }
+          - { label: "Badge - Texte", name: "badge_text", widget: "string" }
+          
+      - label: "Honoraires"
+        name: "fees"
+        file: "content/fees.json"
+        fields:
+          - { label: "Premier rendez-vous - Prix", name: "first_consultation_price", widget: "string" }
+          - { label: "Premier rendez-vous - Durée", name: "first_consultation_duration", widget: "string" }
+          - { label: "Premier rendez-vous - Note", name: "first_consultation_note", widget: "string" }
+          - { label: "Fourchette honoraires min", name: "hourly_rate_min", widget: "string" }
+          - { label: "Fourchette honoraires max", name: "hourly_rate_max", widget: "string" }
+          
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact.json"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - { label: "Adresse complète", name: "full_address", widget: "text" }
+          - { label: "Horaires", name: "hours", widget: "text" }
+          
+  - name: "expertises"
+    label: "Expertises"
+    folder: "content/expertises"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Points clés", name: "points", widget: "list" }
+      - { label: "Ordre", name: "order", widget: "number" }
