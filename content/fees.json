@@ -1,0 +1,17 @@
+{
+  "label": "Transparence",
+  "title": "Honoraires",
+  "intro": "Je m'engage à vous présenter une tarification claire et adaptée à votre situation. Les honoraires sont fixés en accord avec vous, selon les modalités suivantes :",
+  "first_title": "Premier rendez-vous",
+  "first_price": "200€ HT",
+  "first_duration": "pour 45 minutes",
+  "first_note": "Offert si ouverture de dossier",
+  "hourly_title": "Honoraires",
+  "hourly_min": "200€",
+  "hourly_max": "300€ HT",
+  "forfait_title": "Forfait",
+  "forfait_desc": "Pour les missions définies : rédaction d'actes, négociations, procédures.",
+  "rate_title": "Taux horaire",
+  "rate_desc": "Pour les dossiers complexes nécessitant un suivi régulier.",
+  "quote": "Une convention d'honoraires vous sera systématiquement proposée avant toute intervention, garantissant une totale transparence sur le coût de ma prestation."
+}

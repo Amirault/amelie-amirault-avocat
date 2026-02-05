@@ -6,8 +6,8 @@ media_folder: "images"
 public_folder: "/images"
 
 collections:
-  - name: "config"
-    label: "Configuration du site"
+  - name: "pages"
+    label: "Contenu des pages"
     files:
       - label: "Informations générales"
         name: "general"
@@ -17,47 +17,92 @@ collections:
           - { label: "Titre du site", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Téléphone", name: "phone", widget: "string" }
+          - { label: "Téléphone (format international)", name: "phone_intl", widget: "string", hint: "Ex: +596659916309" }
           - { label: "Email", name: "email", widget: "string" }
-          - { label: "Adresse", name: "address", widget: "text" }
+          - { label: "Adresse ligne 1", name: "address_line1", widget: "string" }
+          - { label: "Adresse ligne 2", name: "address_line2", widget: "string" }
+          - { label: "Code postal", name: "postal_code", widget: "string" }
+          - { label: "Ville", name: "city", widget: "string" }
+          
+      - label: "Page d'accueil (Hero)"
+        name: "hero"
+        file: "content/hero.json"
+        fields:
+          - { label: "Sous-titre", name: "subtitle", widget: "string" }
+          - { label: "Prénom", name: "first_name", widget: "string" }
+          - { label: "Nom", name: "last_name", widget: "string" }
+          - { label: "Texte d'accroche", name: "tagline", widget: "text" }
+          - { label: "Bouton principal", name: "cta_primary", widget: "string" }
+          - { label: "Bouton secondaire", name: "cta_secondary", widget: "string" }
           
       - label: "Section À propos"
         name: "about"
         file: "content/about.json"
         fields:
-          - { label: "Titre", name: "title", widget: "string" }
-          - { label: "Introduction", name: "intro", widget: "markdown" }
+          - { label: "Titre section", name: "section_title", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "string" }
+          - { label: "Paragraphe d'introduction", name: "intro", widget: "markdown" }
           - { label: "Paragraphe principal", name: "main_text", widget: "markdown" }
-          - { label: "Texte formations", name: "training_text", widget: "markdown" }
-          - { label: "Langues", name: "languages", widget: "string" }
+          - { label: "Texte formations sur mesure", name: "training_text", widget: "markdown" }
+          - { label: "Langues parlées", name: "languages", widget: "string" }
           - { label: "Badge - Nombre", name: "badge_number", widget: "string" }
           - { label: "Badge - Texte", name: "badge_text", widget: "string" }
+          - label: "Valeurs"
+            name: "values"
+            widget: "list"
+            fields:
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
           
-      - label: "Honoraires"
+      - label: "Section Expertises"
+        name: "expertises_section"
+        file: "content/expertises-section.json"
+        fields:
+          - { label: "Label de section", name: "label", widget: "string" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          
+      - label: "Section Honoraires"
         name: "fees"
         file: "content/fees.json"
         fields:
-          - { label: "Premier rendez-vous - Prix", name: "first_consultation_price", widget: "string" }
-          - { label: "Premier rendez-vous - Durée", name: "first_consultation_duration", widget: "string" }
-          - { label: "Premier rendez-vous - Note", name: "first_consultation_note", widget: "string" }
-          - { label: "Fourchette honoraires min", name: "hourly_rate_min", widget: "string" }
-          - { label: "Fourchette honoraires max", name: "hourly_rate_max", widget: "string" }
+          - { label: "Label de section", name: "label", widget: "string" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Texte d'introduction", name: "intro", widget: "text" }
+          - { label: "Premier RDV - Titre", name: "first_title", widget: "string" }
+          - { label: "Premier RDV - Prix", name: "first_price", widget: "string" }
+          - { label: "Premier RDV - Durée", name: "first_duration", widget: "string" }
+          - { label: "Premier RDV - Note", name: "first_note", widget: "string" }
+          - { label: "Honoraires - Titre", name: "hourly_title", widget: "string" }
+          - { label: "Honoraires - Prix min", name: "hourly_min", widget: "string" }
+          - { label: "Honoraires - Prix max", name: "hourly_max", widget: "string" }
+          - { label: "Forfait - Titre", name: "forfait_title", widget: "string" }
+          - { label: "Forfait - Description", name: "forfait_desc", widget: "text" }
+          - { label: "Taux horaire - Titre", name: "rate_title", widget: "string" }
+          - { label: "Taux horaire - Description", name: "rate_desc", widget: "text" }
+          - { label: "Citation", name: "quote", widget: "text" }
           
-      - label: "Contact"
+      - label: "Section Contact"
         name: "contact"
         file: "content/contact.json"
         fields:
+          - { label: "Label de section", name: "label", widget: "string" }
           - { label: "Titre", name: "title", widget: "string" }
           - { label: "Sous-titre", name: "subtitle", widget: "text" }
-          - { label: "Adresse complète", name: "full_address", widget: "text" }
-          - { label: "Horaires", name: "hours", widget: "text" }
+          - { label: "Horaires - Titre", name: "hours_title", widget: "string" }
+          - { label: "Horaires - Jours", name: "hours_days", widget: "string" }
+          - { label: "Horaires - Heures", name: "hours_time", widget: "string" }
           
   - name: "expertises"
-    label: "Expertises"
+    label: "Expertises (cartes)"
     folder: "content/expertises"
     create: true
-    slug: "{{slug}}"
+    slug: "{{order}}-{{slug}}"
     fields:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Points clés", name: "points", widget: "list" }
-      - { label: "Ordre", name: "order", widget: "number" }
+      - label: "Points clés"
+        name: "points"
+        widget: "list"
+        field: { label: "Point", name: "point", widget: "string" }
+      - { label: "Ordre d'affichage", name: "order", widget: "number", value_type: "int", min: 1 }

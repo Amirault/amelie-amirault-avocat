@@ -3,6 +3,10 @@
   "title": "Maître Amélie Amirault | Avocate Droit du Travail Fort-de-France Martinique",
   "description": "Maître Amélie Amirault, avocate experte en droit du travail, droit social et sécurité sociale à Fort-de-France, Martinique. Conseil et contentieux.",
   "phone": "06 59 91 63 09",
+  "phone_intl": "+596659916309",
   "email": "amelie.bonnieul@gmail.com",
-  "address": "Immeuble Dillon Express, Zone Franche Dillon Stade, 97200 Fort-de-France, Martinique"
+  "address_line1": "Immeuble Dillon Express",
+  "address_line2": "Zone Franche Dillon Stade",
+  "postal_code": "97200",
+  "city": "Fort-de-France"
 }
