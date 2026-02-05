@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style F - Cabinet Moderne Credentials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        .version-label {
+            position: fixed; top: 20px; right: 20px; background: #1a1a1a; color: #d4af37;
+            padding: 10px 20px; border-radius: 5px; font-weight: 600; z-index: 1000;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            padding: 2rem;
+        }
+        
+        .hero-content {
+            max-width: 950px;
+            text-align: center;
+        }
+        
+        /* Bloc profession avocat */
+        .profession-badge {
+            display: inline-block;
+            background: #1a2634;
+            color: white;
+            padding: 1rem 2.5rem;
+            margin-bottom: 2.5rem;
+            position: relative;
+        }
+        
+        .profession-badge::before {
+            content: '⚖';
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            color: #c9a961;
+        }
+        
+        .profession-badge-text {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            margin-left: 1.5rem;
+        }
+        
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.5rem, 7vw, 5.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: #1a2634;
+            margin-bottom: 1rem;
+        }
+        
+        .maitre {
+            font-size: 0.4em;
+            font-weight: 400;
+            display: block;
+            color: #c9a961;
+            margin-bottom: 0.2em;
+            letter-spacing: 0.1em;
+        }
+        
+        .specializations {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 2.5rem 0;
+        }
+        
+        .specialization {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #525252;
+        }
+        
+        .specialization::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #c9a961;
+            border-radius: 50%;
+        }
+        
+        .separator {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #c9a961, transparent);
+            margin: 2.5rem auto;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            color: #525252;
+            margin-bottom: 3rem;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+        
+        /* Info juridique */
+        .legal-info {
+            display: inline-flex;
+            align-items: center;
+            gap: 2rem;
+            background: #f8f7f4;
+            padding: 1rem 2rem;
+            margin-bottom: 3rem;
+            font-size: 0.8rem;
+            color: #525252;
+        }
+        
+        .legal-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .legal-info strong {
+            color: #1a2634;
+            font-weight: 600;
+        }
+        
+        .cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1.2rem 2.8rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #c9a961;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #8b7355;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(201, 169, 97, 0.25);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #1a2634;
+            border: 2px solid #e5e5e5;
+        }
+        
+        .btn-secondary:hover {
+            border-color: #1a2634;
+        }
+        
+        @media (max-width: 768px) {
+            .hero { padding: 3rem 1.5rem; }
+            .specializations { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+            .legal-info { flex-direction: column; gap: 0.5rem; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="version-label">STYLE F : Cabinet Moderne Credentials</div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profession-badge">
+                <span class="profession-badge-text">Avocate au Barreau de Martinique</span>
+            </div>
+            
+            <h1>
+                <span class="maitre">Maître</span>
+                Amélie Amirault
+            </h1>
+            
+            <div class="specializations">
+                <span class="specialization">Droit du Travail</span>
+                <span class="specialization">Droit Social</span>
+                <span class="specialization">Sécurité Sociale</span>
+            </div>
+            
+            <div class="separator"></div>
+            
+            <p class="tagline">Cabinet d'avocate spécialisé dans l'accompagnement juridique des entreprises et des salariés. Conseil, contentieux et défense de vos intérêts avec rigueur et humanité.</p>
+            
+            <div class="legal-info">
+                <span>📍 <strong>Fort-de-France</strong></span>
+                <span>⚖ <strong>+4 ans</strong> d'expérience</span>
+                <span>🇫🇷 Français • Anglais</span>
+            </div>
+            
+            <div class="cta">
+                <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+                <a href="#expertises" class="btn btn-secondary">Découvrir mes expertises</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
