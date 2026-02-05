@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style I - Modern Clean Timeline</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        .version-label {
+            position: fixed; top: 20px; right: 20px; background: #1a1a1a; color: #d4af37;
+            padding: 10px 20px; border-radius: 5px; font-weight: 600; z-index: 1000;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1000px;
+            text-align: center;
+        }
+        
+        /* Tag profession en haut */
+        .profession-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: white;
+            padding: 0.8rem 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .profession-tag-icon {
+            font-size: 1.2rem;
+            color: #c9a961;
+        }
+        
+        .profession-tag-text {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #1a2634;
+        }
+        
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.5rem, 7vw, 5.5rem);
+            font-weight: 600;
+            line-height: 1.1;
+            color: #1a2634;
+            margin-bottom: 1rem;
+        }
+        
+        .maitre {
+            font-size: 0.4em;
+            font-weight: 400;
+            display: block;
+            color: #c9a961;
+            margin-bottom: 0.3rem;
+        }
+        
+        /* Timeline horizontale avec expertises */
+        .timeline {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 0;
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #c9a961 20%, #c9a961 80%, transparent);
+            z-index: 0;
+        }
+        
+        .timeline-item {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .timeline-dot {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 1rem;
+            background: white;
+            border: 3px solid #c9a961;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .timeline-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #1a2634;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.3rem;
+        }
+        
+        .timeline-desc {
+            font-size: 0.75rem;
+            color: #8b7355;
+        }
+        
+        .tagline {
+            font-size: 1.15rem;
+            line-height: 1.9;
+            color: #525252;
+            margin-bottom: 2.5rem;
+            max-width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Stats bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #c9a961;
+            line-height: 1;
+            margin-bottom: 0.3rem;
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: #8b7355;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+        
+        .cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1.1rem 2.8rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #c9a961;
+            color: white;
+            box-shadow: 0 4px 15px rgba(201, 169, 97, 0.25);
+        }
+        
+        .btn-primary:hover {
+            background: #8b7355;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(201, 169, 97, 0.35);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: #1a2634;
+            border: 2px solid #1a2634;
+        }
+        
+        .btn-secondary:hover {
+            background: #1a2634;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .timeline {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .timeline::before {
+                top: 0;
+                left: 30px;
+                right: auto;
+                bottom: 0;
+                width: 2px;
+                height: auto;
+                background: linear-gradient(180deg, transparent, #c9a961 20%, #c9a961 80%, transparent);
+            }
+            .timeline-item {
+                display: flex;
+                gap: 1.5rem;
+                text-align: left;
+            }
+            .stats-bar {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="version-label">STYLE I : Modern Clean Timeline</div>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="profession-tag">
+                <span class="profession-tag-icon">⚖️</span>
+                <span class="profession-tag-text">Avocate • Barreau de Martinique</span>
+            </div>
+            
+            <h1>
+                <span class="maitre">Maître</span>
+                Amélie Amirault
+            </h1>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot">⚖️</div>
+                    <div class="timeline-label">Droit du Travail</div>
+                    <div class="timeline-desc">Licenciement • Rupture</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">👥</div>
+                    <div class="timeline-label">Droit Social</div>
+                    <div class="timeline-desc">CSE • Négociation</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot">🛡️</div>
+                    <div class="timeline-label">Sécurité Sociale</div>
+                    <div class="timeline-desc">URSSAF • Contentieux</div>
+                </div>
+            </div>
+            
+            <p class="tagline">Cabinet d'avocate spécialisé dans l'accompagnement juridique des entreprises et des salariés. Conseil stratégique, contentieux et défense de vos intérêts avec rigueur et humanité.</p>
+            
+            <div class="stats-bar">
+                <div class="stat">
+                    <div class="stat-value">+4</div>
+                    <div class="stat-label">Années</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">3</div>
+                    <div class="stat-label">Expertises</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">2</div>
+                    <div class="stat-label">Langues</div>
+                </div>
+            </div>
+            
+            <div class="cta">
+                <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+                <a href="#expertises" class="btn btn-secondary">Découvrir mes expertises</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

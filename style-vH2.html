@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style H2 - Sans Maître</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        .version-label {
+            position: fixed; top: 20px; right: 20px; background: #1a1a1a; color: #d4af37;
+            padding: 10px 20px; border-radius: 5px; font-weight: 600; z-index: 1000;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1100px;
+            width: 100%;
+        }
+        
+        .masthead {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 1.5rem;
+            margin-bottom: 3rem;
+            border-bottom: 3px solid #1a2634;
+        }
+        
+        .masthead-left {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .badge-avocat {
+            width: 60px;
+            height: 60px;
+            background: #1a2634;
+            color: #c9a961;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+        }
+        
+        .profession {
+            text-align: left;
+        }
+        
+        .profession-title {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #8b7355;
+            margin-bottom: 0.3rem;
+        }
+        
+        .profession-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #1a2634;
+        }
+        
+        .barreau-info {
+            text-align: right;
+            font-size: 0.75rem;
+            color: #525252;
+        }
+        
+        .barreau-info strong {
+            display: block;
+            font-weight: 700;
+            color: #c9a961;
+            margin-bottom: 0.2rem;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .left-column h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.5rem, 7vw, 6rem);
+            font-weight: 700;
+            line-height: 0.95;
+            color: #1a2634;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #c9a961;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .intro {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #525252;
+            margin-bottom: 2.5rem;
+        }
+        
+        .cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #1a2634;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #c9a961;
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #1a2634;
+            border: 2px solid #1a2634;
+        }
+        
+        .btn-secondary:hover {
+            background: #1a2634;
+            color: white;
+        }
+        
+        .sidebar {
+            position: sticky;
+            top: 2rem;
+        }
+        
+        .info-box {
+            background: #f8f7f4;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #c9a961;
+        }
+        
+        .info-box-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #8b7355;
+            margin-bottom: 1rem;
+        }
+        
+        .info-box-content {
+            font-size: 0.9rem;
+            color: #1a2634;
+            line-height: 1.8;
+        }
+        
+        .info-box-content strong {
+            display: block;
+            font-size: 1.5rem;
+            font-family: 'Cormorant Garamond', serif;
+            color: #c9a961;
+            margin-bottom: 0.3rem;
+        }
+        
+        .expertise-list {
+            list-style: none;
+        }
+        
+        .expertise-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            font-size: 0.85rem;
+            color: #525252;
+        }
+        
+        .expertise-list li:last-child {
+            border-bottom: none;
+        }
+        
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .sidebar {
+                position: static;
+            }
+            .masthead {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="version-label">STYLE H2 : Sans Maître</div>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="masthead">
+                <div class="masthead-left">
+                    <div class="badge-avocat">⚖</div>
+                    <div class="profession">
+                        <div class="profession-title">Avocate</div>
+                        <div class="profession-name">Cabinet Amélie Amirault</div>
+                    </div>
+                </div>
+                <div class="barreau-info">
+                    <strong>Barreau de Martinique</strong>
+                    Fort-de-France • Depuis 2020
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <div class="left-column">
+                    <h1>Amélie<br>Amirault</h1>
+                    <p class="subtitle">Avocate en droit du travail & droit social</p>
+                    <p class="intro">J'accompagne entreprises et salariés avec rigueur et humanité dans toutes leurs problématiques juridiques : licenciement, harcèlement, contentieux social et sécurité sociale.</p>
+                    <div class="cta">
+                        <a href="#contact" class="btn btn-primary">Consultation</a>
+                        <a href="#expertises" class="btn btn-secondary">Expertises</a>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="info-box">
+                        <div class="info-box-title">Expérience</div>
+                        <div class="info-box-content">
+                            <strong>+4 ans</strong>
+                            de pratique en droit social
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="info-box-title">Domaines</div>
+                        <div class="info-box-content">
+                            <ul class="expertise-list">
+                                <li>Droit du travail</li>
+                                <li>Droit social</li>
+                                <li>Sécurité sociale</li>
+                                <li>Contentieux prud'homal</li>
+                                <li>Audit & conformité</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="info-box">
+                        <div class="info-box-title">Langues</div>
+                        <div class="info-box-content">
+                            Français • Anglais
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
