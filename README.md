@@ -7,7 +7,7 @@ Site vitrine pour le cabinet d'avocat de Maître Amélie Amirault, spécialisée
 - **Avocate** : Maître Amélie Amirault
 - **Spécialités** : Droit du travail, Droit social, Droit de la Sécurité Sociale
 - **Localisation** : Fort-de-France, Martinique (97200)
-- **Contact** : 05 96 42 63 63
+- **Contact** : 06 59 91 63 09
 
 ## 🚀 Lancer le site en local
 
