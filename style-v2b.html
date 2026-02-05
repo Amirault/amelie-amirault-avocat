@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style 2B - Avec Icône Justice</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Montserrat', sans-serif; }
+        
+        .version-label {
+            position: fixed; top: 20px; right: 20px; background: #1a1a1a; color: #d4af37;
+            padding: 10px 20px; border-radius: 5px; font-weight: 600; z-index: 1000;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+            padding: 2rem;
+            position: relative;
+        }
+        
+        /* Accent subtil en haut */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #c9a961, transparent);
+        }
+        
+        .hero-content {
+            max-width: 850px;
+            text-align: center;
+        }
+        
+        /* Icône scales de justice minimaliste */
+        .icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 2.5rem;
+            color: #c9a961;
+            opacity: 0.9;
+        }
+        
+        .subtitle {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #ffffff;
+            background: #1a2634;
+            padding: 0.6rem 1.8rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3.2rem, 7vw, 5.5rem);
+            font-weight: 500;
+            line-height: 1.15;
+            color: #1a2634;
+            margin-bottom: 2rem;
+        }
+        
+        h1 .line2 {
+            display: block;
+            font-weight: 700;
+            color: #c9a961;
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            line-height: 1.95;
+            color: #525252;
+            margin-bottom: 3.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+        
+        .cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1.1rem 2.8rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: #c9a961;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #8b7355;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(201, 169, 97, 0.25);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #1a2634;
+            border: 2px solid #e5e5e5;
+        }
+        
+        .btn-secondary:hover {
+            border-color: #c9a961;
+            color: #c9a961;
+        }
+        
+        @media (max-width: 768px) {
+            .hero { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="version-label">STYLE 2B : Avec Icône Justice</div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 3v18M5 8l7-5 7 5M4 21h16M6 18h12M12 3a9 9 0 0 1 0 18 9 9 0 0 1 0-18z"/>
+                <path d="M9 8h6M9 11h6"/>
+            </svg>
+            
+            <div class="subtitle">Avocate au Barreau de Martinique</div>
+            
+            <h1>
+                Maître Amélie
+                <span class="line2">Amirault</span>
+            </h1>
+            
+            <p class="tagline">Experte en droit du travail, droit social et sécurité sociale. J'accompagne entreprises et salariés avec rigueur et humanité en Martinique.</p>
+            
+            <div class="cta">
+                <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
+                <a href="#expertises" class="btn btn-secondary">Découvrir mes expertises</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
