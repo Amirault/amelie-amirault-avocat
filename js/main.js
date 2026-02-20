@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initRevealAnimations();
     initContactForm();
+    initReviewsCarousel();
 });
 
 /**
@@ -204,6 +205,87 @@ function showFormMessage(message, type) {
         messageEl.style.transition = 'opacity 0.3s ease';
         setTimeout(() => messageEl.remove(), 300);
     }, 5000);
+}
+
+/**
+ * Carousel d'avis Google Business
+ */
+function initReviewsCarousel() {
+    const track = document.getElementById('reviews-track');
+    const dotsContainer = document.getElementById('reviews-dots');
+    const prevBtn = document.getElementById('reviews-prev');
+    const nextBtn = document.getElementById('reviews-next');
+
+    if (!track) return;
+
+    fetch('/content/reviews.json')
+        .then(res => res.json())
+        .then(data => {
+            const reviews = data.reviews;
+            if (!reviews || reviews.length === 0) return;
+
+            let current = 0;
+            let autoPlayTimer;
+
+            function renderStars(rating) {
+                return Array.from({ length: 5 }, (_, i) => {
+                    const filled = i < rating;
+                    return `<svg viewBox="0 0 24 24" ${filled ? '' : 'style="opacity:0.3"'}>
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                    </svg>`;
+                }).join('');
+            }
+
+            // Construire les slides
+            reviews.forEach((review, idx) => {
+                const slide = document.createElement('div');
+                slide.className = 'review-slide' + (idx === 0 ? ' active' : '');
+                slide.innerHTML = `
+                    <div class="review-stars">${renderStars(review.rating)}</div>
+                    <p class="review-text">&laquo;&nbsp;${review.text}&nbsp;&raquo;</p>
+                    <div class="review-meta">
+                        <span class="review-author">${review.author}</span>
+                        <span class="review-source">Avis Google</span>
+                    </div>`;
+                track.appendChild(slide);
+
+                // Dot
+                const dot = document.createElement('button');
+                dot.className = 'reviews-dot' + (idx === 0 ? ' active' : '');
+                dot.setAttribute('aria-label', `Avis ${idx + 1}`);
+                dot.addEventListener('click', () => goTo(idx));
+                dotsContainer.appendChild(dot);
+            });
+
+            const slides = track.querySelectorAll('.review-slide');
+            const dots = dotsContainer.querySelectorAll('.reviews-dot');
+
+            function goTo(idx) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (idx + reviews.length) % reviews.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+                resetAutoPlay();
+            }
+
+            function resetAutoPlay() {
+                clearInterval(autoPlayTimer);
+                autoPlayTimer = setInterval(() => goTo(current + 1), 5000);
+            }
+
+            prevBtn.addEventListener('click', () => goTo(current - 1));
+            nextBtn.addEventListener('click', () => goTo(current + 1));
+
+            resetAutoPlay();
+
+            // Pause au survol
+            track.closest('.reviews-carousel').addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+            track.closest('.reviews-carousel').addEventListener('mouseleave', resetAutoPlay);
+        })
+        .catch(() => {
+            // Silencieux si le fichier n'est pas accessible (ex: ouverture locale)
+        });
 }
 
 /**
