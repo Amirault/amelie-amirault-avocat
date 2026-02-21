@@ -855,6 +855,12 @@ ul {
     font-size: 0.9rem;
 }
 
+.fees-options .fee-option:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: calc(50% - var(--spacing-md) / 2);
+    margin: 0 auto;
+}
+
 .fees-image {
     position: relative;
 }
@@ -1111,6 +1117,14 @@ ul {
    Responsive
    =================================== */
 @media (max-width: 1024px) {
+    .hero-content {
+        padding: 0 var(--spacing-xl) var(--spacing-xl);
+    }
+
+    .about-values {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .expertise-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1174,6 +1188,12 @@ ul {
     
     .fees-options {
         grid-template-columns: 1fr;
+    }
+
+    .fees-options .fee-option:last-child:nth-child(odd) {
+        grid-column: auto;
+        max-width: none;
+        margin: 0;
     }
     
     .contact-grid {
