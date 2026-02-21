@@ -97,7 +97,7 @@ ul {
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--color-secondary);
+    color: #7a6020;
     margin-bottom: var(--spacing-sm);
 }
 
@@ -259,7 +259,7 @@ ul {
 .nav-link-cta {
     padding: 0.75rem 1.5rem;
     background-color: var(--color-secondary);
-    color: var(--color-white) !important;
+    color: var(--color-primary) !important;
 }
 
 .nav-link-cta::after {
@@ -570,7 +570,7 @@ ul {
     height: 20px;
 }
 
-.value-text h4 {
+.value-text h3 {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -819,7 +819,7 @@ ul {
     border-left: 3px solid var(--color-secondary);
 }
 
-.fee-option h4 {
+.fee-option h3 {
     font-size: 1rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -836,7 +836,7 @@ ul {
     border-left-color: var(--color-primary);
 }
 
-.fee-option-highlight h4 {
+.fee-option-highlight h3 {
     color: var(--color-white);
 }
 
@@ -933,7 +933,7 @@ ul {
     height: 22px;
 }
 
-.contact-text h4 {
+.contact-text h3 {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -1053,7 +1053,7 @@ ul {
     line-height: 1.6;
 }
 
-.footer h4 {
+.footer h3 {
     font-size: 0.875rem;
     font-weight: 600;
     color: var(--color-white);
@@ -1102,11 +1102,12 @@ ul {
 .footer-legal {
     margin-top: var(--spacing-xs);
     font-size: 0.8rem !important;
-    color: var(--color-gray-600);
+    color: var(--color-gray-300);
 }
 
 .footer-legal a {
     color: var(--color-secondary);
+    text-decoration: underline;
 }
 
 .footer-legal a:hover {

@@ -238,7 +238,8 @@
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"></noscript>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -247,8 +248,6 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     
-    <!-- Netlify Identity Widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -290,6 +289,7 @@
         </div>
     </header>
 
+    <main>
     <!-- À propos -->
     <section class="about" id="apropos">
         <div class="container">
@@ -340,7 +340,7 @@
                                 </svg>
                             </div>
                             <div class="value-text">
-                                <h4>Confidentialité</h4>
+                                <h3>Confidentialité</h3>
                                 <p>Secret professionnel absolu</p>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                                 </svg>
                             </div>
                             <div class="value-text">
-                                <h4>Réactivité</h4>
+                                <h3>Réactivité</h3>
                                 <p>Disponibilité et écoute</p>
                             </div>
                         </div>
@@ -367,7 +367,7 @@
                                 </svg>
                             </div>
                             <div class="value-text">
-                                <h4>Rigueur</h4>
+                                <h3>Rigueur</h3>
                                 <p>Excellence juridique</p>
                             </div>
                         </div>
@@ -507,23 +507,23 @@
                     </p>
                     <div class="fees-options">
                         <div class="fee-option fee-option-highlight">
-                            <h4>Premier rendez-vous</h4>
+                            <h3>Premier rendez-vous</h3>
                             <p><strong>200€ HT</strong> pour 45 minutes<br><em>Offert si ouverture de dossier</em></p>
                         </div>
                         <div class="fee-option">
-                            <h4>Taux horaire</h4>
+                            <h3>Taux horaire</h3>
                             <p>Entre <strong>230€ et 300€ HT</strong> selon la complexité du dossier.</p>
                         </div>
                         <div class="fee-option">
-                            <h4>Forfait</h4>
+                            <h3>Forfait</h3>
                             <p>Pour les missions définies : rédaction d'actes, négociations, procédures.</p>
                         </div>
                         <div class="fee-option">
-                            <h4>Abonnement</h4>
+                            <h3>Abonnement</h3>
                             <p>Pour le suivi régulier et le conseil aux entreprises.</p>
                         </div>
                         <div class="fee-option">
-                            <h4>Devis sur mesure</h4>
+                            <h3>Devis sur mesure</h3>
                             <p>Pour les formations en droit social.</p>
                         </div>
                     </div>
@@ -564,7 +564,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>Cabinet</h4>
+                                <h3>Cabinet</h3>
                                 <p>Immeuble Dillon Express<br>Zone Franche Dillon Stade<br>97200 Fort-de-France<br>Martinique</p>
                             </div>
                         </div>
@@ -575,7 +575,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>Téléphone</h4>
+                                <h3>Téléphone</h3>
                                 <p><a href="tel:+596659916309">06 59 91 63 09</a></p>
                             </div>
                         </div>
@@ -587,7 +587,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>Horaires</h4>
+                                <h3>Horaires</h3>
                                 <p>Lundi - Vendredi<br>08h00 - 18h00</p>
                             </div>
                         </div>
@@ -599,7 +599,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>Email</h4>
+                                <h3>Email</h3>
                                 <p><a href="mailto:amelie.bonnieul@gmail.com">amelie.bonnieul@gmail.com</a></p>
                             </div>
                         </div>
@@ -648,6 +648,8 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -657,7 +659,7 @@
                     <p>Avocate en droit du travail<br>Barreau de Martinique</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Navigation</h4>
+                    <h3>Navigation</h3>
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#apropos">À propos</a></li>
@@ -667,7 +669,7 @@
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Expertises</h4>
+                    <h3>Expertises</h3>
                     <ul>
                         <li>Droit du travail</li>
                         <li>Licenciement</li>
@@ -677,7 +679,7 @@
                     </ul>
                 </div>
                 <div class="footer-contact">
-                    <h4>Contact</h4>
+                    <h3>Contact</h3>
                     <p>Immeuble Dillon Express<br>97200 Fort-de-France</p>
                     <p><a href="tel:+596659916309">06 59 91 63 09</a></p>
                     <p><a href="mailto:amelie.bonnieul@gmail.com">amelie.bonnieul@gmail.com</a></p>
@@ -694,16 +696,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
 </body>
 </html>
