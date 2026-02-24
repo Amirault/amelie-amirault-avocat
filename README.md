@@ -18,11 +18,11 @@
 
 ## 📌 À propos
 
-Site vitrine officiel de **Maître Amélie Amirault**, avocate spécialisée en droit du travail, droit social et droit de la Sécurité Sociale exerçant à Fort-de-France, Martinique.
+Site vitrine officiel de **Maître Amélie Amirault**, avocat spécialisée en droit du travail, droit social et droit de la Sécurité Sociale exerçant à Fort-de-France, Martinique.
 
 | Information | Détails |
 |------------|---------|
-| **Avocate** | Maître Amélie Amirault |
+| **Avocat** | Maître Amélie Amirault |
 | **Spécialités** | Droit du travail, Droit social, Sécurité Sociale |
 | **Localisation** | Fort-de-France, Martinique (97200) |
 | **Téléphone** | 06 59 91 63 09 |

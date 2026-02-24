@@ -16,7 +16,7 @@ Une fois le site déployé sur Netlify, vous pourrez modifier le contenu via une
    - Cliquer sur **Enable Git Gateway**
 5. **Inviter l'utilisateur admin** :
    - Aller dans **Identity** → **Invite users**
-   - Entrer l'email de l'avocate
+   - Entrer l'email de l'avocat
    - Elle recevra un email d'invitation
 
 ### Accès au CMS
