@@ -200,7 +200,22 @@ ul {
 
 .nav-logo {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.nav-logo-text-group {
+    display: flex;
     flex-direction: column;
+}
+
+.nav-logo-icon {
+    width: 28px;
+    height: 28px;
+    color: var(--color-secondary);
+    flex-shrink: 0;
+    transition: color var(--transition-normal);
 }
 
 .logo-text {
@@ -507,6 +522,8 @@ ul {
 
 .about-image {
     position: relative;
+    max-width: 360px;
+    margin: 0 auto;
 }
 
 .image-frame {
@@ -538,6 +555,7 @@ ul {
 .about-text p {
     font-size: 1rem;
     line-height: 1.8;
+    margin-bottom: var(--spacing-md);
 }
 
 .about-values {
@@ -583,12 +601,57 @@ ul {
 }
 
 /* ===================================
-   Reviews Carousel
+   Reviews Section
    =================================== */
-.reviews-carousel {
-    margin-top: var(--spacing-md);
+.reviews-section {
+    padding: var(--spacing-2xl) 0;
     background-color: var(--color-primary);
-    padding: var(--spacing-md);
+}
+
+.reviews-section-inner {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+.reviews-rating-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding-right: var(--spacing-2xl);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.reviews-stars-global {
+    display: flex;
+    gap: 4px;
+}
+
+.reviews-stars-global svg {
+    width: 22px;
+    height: 22px;
+    fill: var(--color-secondary);
+    color: var(--color-secondary);
+}
+
+.reviews-rating-text {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.reviews-rating-text strong {
+    color: var(--color-secondary);
+    font-size: 1.1rem;
+}
+
+/* Reviews Carousel */
+.reviews-carousel {
+    background-color: transparent;
+    padding: 0;
     overflow: hidden;
 }
 
@@ -799,7 +862,7 @@ ul {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: var(--spacing-2xl);
-    align-items: start;
+    align-items: center;
 }
 
 .fees-text p {
@@ -1039,13 +1102,26 @@ ul {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-brand-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-logo-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-secondary);
+    flex-shrink: 0;
+}
+
 .footer-logo {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-white);
     display: block;
-    margin-bottom: var(--spacing-sm);
 }
 
 .footer-brand p {
@@ -1169,10 +1245,19 @@ ul {
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
     }
-    
-    .about-image {
-        max-width: 400px;
-        margin: 0 auto;
+
+    .reviews-section-inner {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .reviews-rating-header {
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 0;
+        padding-bottom: var(--spacing-md);
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     }
     
     .about-values {

@@ -254,8 +254,17 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#accueil" class="nav-logo">
-                <span class="logo-text">Me Amélie Amirault</span>
-                <span class="logo-subtitle">Avocate</span>
+                <svg class="nav-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M5 6 L3 13 Q3 16 6.5 16 Q10 16 10 13 L8 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <path d="M16 6 L14 13 Q14 16 17.5 16 Q21 16 21 13 L19 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                    <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <div class="nav-logo-text-group">
+                    <span class="logo-text">Me Amélie Amirault</span>
+                    <span class="logo-subtitle">Avocate</span>
+                </div>
             </a>
             <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
                 <span></span>
@@ -277,7 +286,7 @@
         <div class="hero-content">
             <p class="hero-subtitle">Avocate au Barreau de Martinique</p>
             <h1 class="hero-title">Maître Amélie<br><span>Amirault</span></h1>
-            <p class="hero-tagline">Avocate à Fort-de-France, experte en droit social, droit du travail et droit de la Sécurité Sociale.<br>Accompagnement en conseil et contentieux avec rigueur et réactivité en Martinique.</p>
+            <p class="hero-tagline">Avocate à Fort-de-France,<br>experte en droit social (droit du travail) et droit de la sécurité sociale.<br>Bénéficiez d'un accompagnement qualitatif sur-mesure aussi bien en conseil qu'en contentieux, avec rigueur et réactivité.</p>
             <div class="hero-cta">
                 <a href="#contact" class="btn btn-primary">Prendre rendez-vous</a>
                 <a href="#expertises" class="btn btn-secondary">Découvrir mes expertises</a>
@@ -301,18 +310,6 @@
                              width="400" 
                              height="400"
                              loading="lazy">
-                    </div>
-                    <div class="reviews-carousel" id="reviews-carousel" aria-label="Avis clients">
-                        <div class="reviews-track" id="reviews-track"></div>
-                        <div class="reviews-nav">
-                            <button class="reviews-btn" id="reviews-prev" aria-label="Avis précédent">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
-                            </button>
-                            <div class="reviews-dots" id="reviews-dots"></div>
-                            <button class="reviews-btn" id="reviews-next" aria-label="Avis suivant">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-                            </button>
-                        </div>
                     </div>
                 </div>
                 <div class="about-text">
@@ -377,15 +374,46 @@
         </div>
     </section>
 
+    <!-- Avis clients -->
+    <section class="reviews-section" id="avis">
+        <div class="container">
+            <div class="reviews-section-inner">
+                <div class="reviews-rating-header">
+                    <div class="reviews-stars-global">
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    </div>
+                    <p class="reviews-rating-text">Note globale <strong>5 / 5</strong> sur Google</p>
+                </div>
+                <div class="reviews-carousel" id="reviews-carousel" aria-label="Avis clients">
+                    <div class="reviews-track" id="reviews-track"></div>
+                    <div class="reviews-nav">
+                        <button class="reviews-btn" id="reviews-prev" aria-label="Avis précédent">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <div class="reviews-dots" id="reviews-dots"></div>
+                        <button class="reviews-btn" id="reviews-next" aria-label="Avis suivant">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Expertises -->
     <section class="expertises" id="expertises">
         <div class="container">
             <div class="section-header">
                 <span class="section-label">Domaines d'intervention</span>
-                <h2 class="section-title">Ses expertises</h2>
+                <h2 class="section-title">Mes expertises</h2>
                 <p class="section-description">
-                    Spécialisée en droit du travail et en droit social, j'accompagne mes clients 
-                    dans toutes les problématiques liées à la relation de travail.
+                    Experte en droit du travail et de la sécurité sociale, j'accompagne mes clients,
+                    entreprises de toute taille et cadres dirigeants, dans toutes les problématiques
+                    liées à la relation de travail ou au contentieux de la sécurité sociale.
                 </p>
             </div>
             <div class="expertise-grid">
@@ -433,8 +461,9 @@
                     <ul class="card-list">
                         <li>Accident du travail</li>
                         <li>Maladie professionnelle</li>
-                        <li>Burn out</li>
+                        <li>Risques psycho-sociaux (burn out, stress au travail, etc)</li>
                         <li>Handicap</li>
+                        <li>Contentieux</li>
                     </ul>
                 </article>
 
@@ -467,9 +496,9 @@
                     <ul class="card-list">
                         <li>Conformité sociale (audit)</li>
                         <li>Convention collective</li>
-                        <li>Négociation collective</li>
-                        <li>CSE (mise en place, élections, contestation d'expertises...)</li>
-                        <li>Accompagnement en cas de mouvement social / grève</li>
+                        <li>Négociation collective, accords collectifs</li>
+                        <li>CSE (suivi, mise en place des élections professionnelles, contestation d'expertise, etc)</li>
+                        <li>Mouvements sociaux, grèves</li>
                         <li>Restructurations</li>
                     </ul>
                 </article>
@@ -488,6 +517,8 @@
                         <li>Conflit URSSAF</li>
                         <li>Cotisations sociales</li>
                         <li>Contrôle URSSAF</li>
+                        <li>Contestation AT/MP</li>
+                        <li>Contentieux CGSS</li>
                     </ul>
                 </article>
             </div>
@@ -511,12 +542,8 @@
                             <p><strong>200€ HT</strong> pour 45 minutes<br><em>Offert si ouverture de dossier</em></p>
                         </div>
                         <div class="fee-option">
-                            <h3>Taux horaire</h3>
-                            <p>Entre <strong>230€ et 300€ HT</strong> selon la complexité du dossier.</p>
-                        </div>
-                        <div class="fee-option">
-                            <h3>Forfait</h3>
-                            <p>Pour les missions définies : rédaction d'actes, négociations, procédures.</p>
+                            <h3>Taux horaire &amp; forfait</h3>
+                            <p>Taux horaire : entre <strong>230 et 300€ de l'heure HT</strong> selon complexité du dossier.<br>Forfait pour des missions prédéfinies : rédaction d'actes, négociations, procédures, contentieux.</p>
                         </div>
                         <div class="fee-option">
                             <h3>Abonnement</h3>
@@ -534,8 +561,8 @@
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
                         </svg>
                         <blockquote>
-                            Une convention d'honoraires vous sera systématiquement proposée 
-                            avant toute intervention, garantissant une totale transparence 
+                            Le montant des honoraires vous sera systématiquement présenté
+                            avant toute intervention, garantissant une totale transparence
                             sur le coût de ma prestation.
                         </blockquote>
                     </div>
@@ -625,11 +652,10 @@
                             <label for="subject">Objet *</label>
                             <select id="subject" name="subject" required>
                                 <option value="">Sélectionnez un sujet</option>
-                                <option value="consultation">Demande de consultation</option>
-                                <option value="licenciement">Licenciement</option>
-                                <option value="harcelement">Harcèlement / Discrimination</option>
-                                <option value="contrat">Contrat de travail</option>
-                                <option value="entreprise">Conseil entreprise</option>
+                                <option value="rdv">Demande de rdv</option>
+                                <option value="conseil-entreprise">Conseil entreprise</option>
+                                <option value="prudhomale">Procédure prud'homale</option>
+                                <option value="urssaf">Procédure URSSAF</option>
                                 <option value="autre">Autre</option>
                             </select>
                         </div>
@@ -655,7 +681,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="footer-logo">Me Amélie Amirault</span>
+                    <div class="footer-brand-header">
+                        <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <line x1="3" y1="6" x2="21" y2="6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M5 6 L3 13 Q3 16 6.5 16 Q10 16 10 13 L8 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <path d="M16 6 L14 13 Q14 16 17.5 16 Q21 16 21 13 L19 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        <span class="footer-logo">Me Amélie Amirault</span>
+                    </div>
                     <p>Avocate en droit du travail<br>Barreau de Martinique</p>
                 </div>
                 <div class="footer-links">
@@ -674,8 +709,10 @@
                         <li>Droit du travail</li>
                         <li>Licenciement</li>
                         <li>Restructurations</li>
+                        <li>AT/MP</li>
                         <li>Harcèlement</li>
                         <li>Contentieux prud'homal</li>
+                        <li>Contentieux URSSAF / CGSS</li>
                     </ul>
                 </div>
                 <div class="footer-contact">
