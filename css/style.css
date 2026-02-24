@@ -1300,6 +1300,10 @@ ul {
         grid-template-columns: 1fr;
         text-align: center;
     }
+
+    .footer-brand-header {
+        justify-content: center;
+    }
     
     .hero-cta {
         flex-direction: column;
