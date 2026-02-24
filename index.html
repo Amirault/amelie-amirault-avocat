@@ -250,6 +250,7 @@
     
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Passer au contenu principal</a>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -266,7 +267,7 @@
                     <span class="logo-subtitle">Avocat</span>
                 </div>
             </a>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -292,13 +293,13 @@
                 <a href="#expertises" class="btn btn-secondary">Découvrir mes expertises</a>
             </div>
         </div>
-        <div class="hero-scroll">
+        <div class="hero-scroll" aria-hidden="true">
             <span>Défiler</span>
             <div class="scroll-indicator"></div>
         </div>
     </header>
 
-    <main>
+    <main id="main-content">
     <!-- À propos -->
     <section class="about" id="apropos">
         <div class="container">
@@ -332,7 +333,7 @@
                     <div class="about-values">
                         <div class="value">
                             <div class="value-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 </svg>
                             </div>
@@ -343,7 +344,7 @@
                         </div>
                         <div class="value">
                             <div class="value-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"/>
                                     <path d="M12 6v6l4 2"/>
                                 </svg>
@@ -355,7 +356,7 @@
                         </div>
                         <div class="value">
                             <div class="value-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                                     <polyline points="14 2 14 8 20 8"/>
                                     <line x1="16" y1="13" x2="8" y2="13"/>
@@ -379,7 +380,7 @@
         <div class="container">
             <div class="reviews-section-inner">
                 <div class="reviews-rating-header">
-                    <div class="reviews-stars-global">
+                    <div class="reviews-stars-global" aria-hidden="true">
                         <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                         <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
                         <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
@@ -389,14 +390,14 @@
                     <p class="reviews-rating-text">Note globale <strong>5 / 5</strong> sur Google</p>
                 </div>
                 <div class="reviews-carousel" id="reviews-carousel" aria-label="Avis clients">
-                    <div class="reviews-track" id="reviews-track"></div>
+                    <div class="reviews-track" id="reviews-track" aria-live="polite" aria-atomic="false"></div>
                     <div class="reviews-nav">
                         <button class="reviews-btn" id="reviews-prev" aria-label="Avis précédent">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
                         </button>
                         <div class="reviews-dots" id="reviews-dots"></div>
                         <button class="reviews-btn" id="reviews-next" aria-label="Avis suivant">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
                         </button>
                     </div>
                 </div>
@@ -419,7 +420,7 @@
             <div class="expertise-grid">
                 <article class="expertise-card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
                             <circle cx="12" cy="7" r="4"/>
                         </svg>
@@ -436,7 +437,7 @@
 
                 <article class="expertise-card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                         </svg>
                     </div>
@@ -452,7 +453,7 @@
 
                 <article class="expertise-card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
                         </svg>
                     </div>
@@ -469,7 +470,7 @@
 
                 <article class="expertise-card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                             <path d="M9 12l2 2 4-4"/>
                         </svg>
@@ -486,7 +487,7 @@
 
                 <article class="expertise-card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
                             <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
                         </svg>
@@ -505,7 +506,7 @@
 
                 <article class="expertise-card">
                     <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
                             <path d="M12 2L2 7l10 5 10-5-10-5z"/>
                             <path d="M2 17l10 5 10-5"/>
                             <path d="M2 12l10 5 10-5"/>
@@ -557,7 +558,7 @@
                 </div>
                 <div class="fees-image">
                     <div class="quote-block">
-                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
                         </svg>
                         <blockquote>
@@ -585,7 +586,7 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                     <circle cx="12" cy="10" r="3"/>
                                 </svg>
@@ -597,7 +598,7 @@
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                                 </svg>
                             </div>
@@ -608,7 +609,7 @@
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <circle cx="12" cy="12" r="10"/>
                                     <polyline points="12 6 12 12 16 14"/>
                                 </svg>
@@ -620,7 +621,7 @@
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                     <polyline points="22,6 12,13 2,6"/>
                                 </svg>

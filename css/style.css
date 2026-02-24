@@ -713,7 +713,7 @@ ul {
 
 .review-source {
     font-size: 0.7rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.55);
 }
 
 .review-source::before {
@@ -752,22 +752,37 @@ ul {
 
 .reviews-dots {
     display: flex;
-    gap: 6px;
+    gap: 0;
     align-items: center;
 }
 
 .reviews-dot {
-    width: 6px;
-    height: 6px;
-    background-color: rgba(255, 255, 255, 0.3);
+    /* Touch target: 24×24px minimum (WCAG 2.5.8) */
+    width: 24px;
+    height: 24px;
+    background: transparent;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color var(--transition-fast);
     border: none;
     padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
 }
 
-.reviews-dot.active {
+.reviews-dot::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: background-color var(--transition-fast);
+    flex-shrink: 0;
+}
+
+.reviews-dot.active::before {
     background-color: var(--color-secondary);
 }
 
@@ -1063,7 +1078,8 @@ ul {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: none;
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 0;
     border-color: var(--color-secondary);
 }
 
@@ -1333,6 +1349,50 @@ ul {
     .contact-form-wrapper {
         padding: var(--spacing-md);
     }
+}
+
+/* ===================================
+   Skip Link
+   =================================== */
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.75rem 1.5rem;
+    z-index: 9999;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ===================================
+   Focus Styles (Accessibility)
+   =================================== */
+.btn:focus-visible,
+.reviews-btn:focus-visible,
+.nav-toggle:focus-visible,
+.reviews-dot:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+.nav-link:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 4px;
+}
+
+.footer-links a:focus-visible,
+.contact-text a:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
 }
 
 /* ===================================

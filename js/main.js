@@ -39,27 +39,26 @@ function initMobileMenu() {
     const navMenu = document.getElementById('nav-menu');
     const navLinks = navMenu.querySelectorAll('.nav-link');
 
+    function setMenuState(isOpen) {
+        navMenu.classList.toggle('active', isOpen);
+        navToggle.classList.toggle('active', isOpen);
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
     navToggle.addEventListener('click', () => {
-        navMenu.classList.toggle('active');
-        navToggle.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+        setMenuState(!navMenu.classList.contains('active'));
     });
 
     // Fermer le menu au clic sur un lien
     navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-            document.body.style.overflow = '';
-        });
+        link.addEventListener('click', () => setMenuState(false));
     });
 
     // Fermer avec Escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
-            navMenu.classList.remove('active');
-            navToggle.classList.remove('active');
-            document.body.style.overflow = '';
+            setMenuState(false);
         }
     });
 }
@@ -184,6 +183,7 @@ function showFormMessage(message, type) {
     // Créer le nouveau message
     const messageEl = document.createElement('div');
     messageEl.className = `form-message form-message-${type}`;
+    messageEl.setAttribute('role', 'alert');
     messageEl.textContent = message;
     
     // Styles inline pour le message
@@ -230,7 +230,7 @@ function initReviewsCarousel() {
             function renderStars(rating) {
                 return Array.from({ length: 5 }, (_, i) => {
                     const filled = i < rating;
-                    return `<svg viewBox="0 0 24 24" ${filled ? '' : 'style="opacity:0.3"'}>
+                    return `<svg viewBox="0 0 24 24" aria-hidden="true" ${filled ? '' : 'style="opacity:0.3"'}>
                         <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
                     </svg>`;
                 }).join('');
