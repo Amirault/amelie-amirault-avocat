@@ -1,22 +1,28 @@
 {
   "reviews": [
     {
-      "author": "Marie-Line T.",
+      "author": "Elodie Varacavoudin",
       "rating": 5,
-      "text": "Maître Amirault m'a accompagnée dans une situation de harcèlement moral très difficile. Son professionnalisme, sa réactivité et son écoute m'ont été précieux. Je recommande vivement.",
-      "date": "Janvier 2025"
+      "text": "J'ai eu l'opportunité de collaborer avec Me AMIRAULT sur plusieurs dossiers mêlant contentieux et conseil en droit social, et je ne peux que recommander la qualité de son accompagnement.",
+      "date": "Janvier 2024"
     },
     {
-      "author": "Jean-Claude B.",
+      "author": "Cynthia BOLINOIS",
       "rating": 5,
-      "text": "Excellente avocate, très rigoureuse et pédagogue. Elle a su défendre mes intérêts lors d'un licenciement et obtenir un excellent résultat. Merci pour votre engagement.",
-      "date": "Novembre 2024"
+      "text": "J'ai eu l'occasion de faire appel aux services de Me Amirault en droit social dans le cadre de dossiers complexes. Son expertise, sa rigueur et sa parfaite maîtrise des enjeux juridiques ont été particulièrement appréciables.",
+      "date": "Février 2026"
     },
     {
-      "author": "Sophie M.",
+      "author": "Khaled ALKHATEEB",
       "rating": 5,
-      "text": "Un cabinet sérieux, disponible et à l'écoute. Maître Amirault connaît parfaitement son domaine et sait expliquer clairement les démarches. Je n'hésiterai pas à la recontacter.",
-      "date": "Octobre 2024"
+      "text": "J'ai sollicité l'aide de Maître Amélie AMIRAULT, pour une affaire personnelle. Elle a rédigé un recours efficace qui m'a permis de gagner mon dossier en 2020. Je la recommande vivement pour son professionnalisme et son efficacité.",
+      "date": "Février 2026"
+    },
+    {
+      "author": "Géraldine",
+      "rating": 5,
+      "text": "J'ai eu l'occasion de travailler à plusieurs reprises avec Maître Amirault, toujours avec plaisir. Elle sait se montrer pédagogue sur les sujets de fond et très réactive lorsque les délais sont comptés. Je recommande vivement ses services. Merci.",
+      "date": "Février 2026"
     }
   ]
 }
