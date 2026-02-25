@@ -148,19 +148,27 @@ function initContactForm() {
             return;
         }
 
-        // Simulation d'envoi (à remplacer par un vrai backend)
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
         submitBtn.textContent = 'Envoi en cours...';
         submitBtn.disabled = true;
 
-        // Simuler un délai d'envoi
-        setTimeout(() => {
-            showFormMessage('Merci pour votre message ! Je vous recontacterai dans les plus brefs délais.', 'success');
-            form.reset();
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        }, 1500);
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(new FormData(form)).toString(),
+        })
+            .then(() => {
+                showFormMessage('Merci pour votre message ! Je vous recontacterai dans les plus brefs délais.', 'success');
+                form.reset();
+            })
+            .catch(() => {
+                showFormMessage('Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.', 'error');
+            })
+            .finally(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
     });
 }
 
