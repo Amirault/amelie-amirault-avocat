@@ -1,7 +1,10 @@
 [build]
   publish = "."
 
-# Netlify Identity widget — required for Netlify CMS git-gateway
+[[edge_functions]]
+  function = "protect-site"
+  path = "/*"
+
 [[headers]]
   for = "/*"
   [headers.values]
