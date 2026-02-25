@@ -17,9 +17,15 @@ export default async function protectSite(request, context) {
     return unauthorized();
   }
 
-  const credentials = atob(authorization.slice("Basic ".length));
-  const password = credentials.slice(credentials.indexOf(":") + 1);
-  const sitePassword = Netlify.env.get("SITE_PASSWORD");
+  let password;
+  try {
+    const credentials = atob(authorization.slice("Basic ".length));
+    password = credentials.slice(credentials.indexOf(":") + 1);
+  } catch {
+    return unauthorized();
+  }
+
+  const sitePassword = Deno.env.get("SITE_PASSWORD");
 
   if (!sitePassword || password !== sitePassword) {
     return unauthorized();
