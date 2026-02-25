@@ -306,11 +306,17 @@
             <div class="about-content">
                 <div class="about-image">
                     <div class="image-frame">
-                        <img src="images/amelie-amirault.png" 
-                             alt="Maître Amélie Amirault - Avocat en droit du travail à Fort-de-France, Martinique" 
-                             width="400" 
-                             height="400"
-                             loading="lazy">
+                        <picture>
+                            <source
+                                type="image/webp"
+                                srcset="images/amelie-amirault-360.webp 360w, images/amelie-amirault-720.webp 720w"
+                                sizes="(max-width: 400px) calc(100vw - 2rem), 360px">
+                            <img src="images/amelie-amirault-720.png"
+                                 alt="Maître Amélie Amirault - Avocat en droit du travail à Fort-de-France, Martinique"
+                                 width="720"
+                                 height="1080"
+                                 loading="lazy">
+                        </picture>
                     </div>
                 </div>
                 <div class="about-text">
