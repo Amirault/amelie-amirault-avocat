@@ -1,7 +1,8 @@
-const UNAUTHORIZED = new Response("Unauthorized", {
-  status: 401,
-  headers: { "WWW-Authenticate": 'Basic realm="Site"' },
-});
+const unauthorized = () =>
+  new Response("Unauthorized", {
+    status: 401,
+    headers: { "WWW-Authenticate": 'Basic realm="Site"' },
+  });
 
 export default async function protectSite(request, context) {
   const { pathname } = new URL(request.url);
@@ -13,7 +14,7 @@ export default async function protectSite(request, context) {
   const authorization = request.headers.get("Authorization");
 
   if (!authorization || !authorization.startsWith("Basic ")) {
-    return UNAUTHORIZED;
+    return unauthorized();
   }
 
   const credentials = atob(authorization.slice("Basic ".length));
@@ -21,7 +22,7 @@ export default async function protectSite(request, context) {
   const sitePassword = Netlify.env.get("SITE_PASSWORD");
 
   if (!sitePassword || password !== sitePassword) {
-    return UNAUTHORIZED;
+    return unauthorized();
   }
 
   return context.next();
