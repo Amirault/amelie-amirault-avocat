@@ -503,7 +503,7 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     gap: var(--spacing-2xl);
-    align-items: center;
+    align-items: start;
 }
 
 .about-image {
@@ -670,7 +670,7 @@ ul {
 
 .review-text {
     font-family: var(--font-heading);
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-style: italic;
     line-height: 1.6;
     color: var(--color-white);
@@ -943,6 +943,13 @@ ul {
     opacity: 0.5;
 }
 
+.quote-icon-close {
+    margin-bottom: 0;
+    margin-top: var(--spacing-md);
+    margin-left: auto;
+    transform: rotate(180deg);
+}
+
 .quote-block blockquote {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -1170,6 +1177,31 @@ ul {
 
 .footer-contact a:hover {
     color: var(--color-secondary);
+}
+
+.footer-social {
+    margin-top: var(--spacing-sm);
+}
+
+.footer-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--color-gray-300);
+    transition: all var(--transition-fast);
+}
+
+.footer-social-link:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.footer-social-link svg {
+    width: 18px;
+    height: 18px;
 }
 
 .footer-bottom {
