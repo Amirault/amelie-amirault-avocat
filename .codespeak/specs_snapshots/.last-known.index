@@ -1,0 +1,144 @@
+# Lawyer Landing Page — Maître Amélie Amirault
+
+Single-page marketing website for a French labour-law attorney based in Fort-de-France, Martinique. All text is in French. The page is served at `https://amelie-amirault-avocat.fr/` and deployed on Netlify.
+
+---
+
+## Document Head
+
+- Language: `fr`; Open Graph prefix declared.
+- Fonts loaded asynchronously via `<link rel="preload">` + `onload` swap: **Cormorant Garamond** (weights 400–700, italic variants) and **Montserrat** (weights 300–600). A `<noscript>` fallback loads them synchronously.
+- Stylesheet: `css/style.css`.
+- Script: `js/main.js` (deferred by placement before `</body>`).
+- Favicon: `/favicon.svg` (SVG) and `/apple-touch-icon.png`.
+- Canonical URL: `https://amelie-amirault-avocat.fr/`.
+
+### SEO & Metadata
+
+| Tag type | Key values |
+|---|---|
+| Primary meta | title, description, keywords, author, robots (`index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1`), language, geo region (`MQ`), geo placename, geo coordinates (14.6161, −61.0588), ICBM |
+| Open Graph | type `website`, title, description, image (`/images/og-image.jpg` 1200×630), locale `fr_FR`, site name |
+| Twitter Card | `summary_large_image`, title, description, image |
+
+### Structured Data (JSON-LD)
+
+Four embedded `<script type="application/ld+json">` blocks:
+
+1. **Attorney** (`@id: …/#attorney`) — name, telephone (`+596659916309`), email, image, price range (230–300 € HT), aggregate rating (5/5, 4 reviews), address, geo, opening hours (Mon–Fri 08:00–18:00), area served (Martinique, Fort-de-France), `knowsAbout` (13 topics), languages (fr, en), bar membership, credential, `sameAs` links.
+2. **LegalService** — references `#attorney`, lists 8 service types, initial consultation offer at 200 € HT (45 min, VAT excluded).
+3. **FAQPage** — 5 Q&A pairs covering expertise areas, office location, fees, contact details, and legal-aid policy.
+4. **BreadcrumbList** — single item: Accueil → homepage URL.
+
+---
+
+## Page Structure
+
+The page follows a linear single-page layout with anchor-based navigation:
+
+```
+<nav>         #navbar / #nav-menu
+<header>      #accueil  (hero)
+<main>
+  <section>   #apropos
+  <section>   #avis
+  <section>   #expertises
+  <section>   #honoraires
+  <section>   #contact
+</main>
+<footer>
+```
+
+A skip-link (`<a href="#main-content" class="skip-link">`) is the first focusable element.
+
+---
+
+## Sections
+
+### Navigation (`#navbar`)
+
+- Fixed top bar with logo (inline SVG scales icon + text group: "Me Amélie Amirault" / "Avocat") and an anchor-link menu.
+- Menu items: Accueil, À propos, Expertises, Honoraires, Contact. The Contact link carries `nav-link-cta` class for distinct styling.
+- A hamburger toggle button (`#nav-toggle`) controls the mobile menu.
+- On scroll past 50 px, the class `scrolled` is added to `#navbar`.
+
+### Hero (`#accueil`)
+
+- Full-screen header with subtitle, `<h1>`, tagline paragraph, and two CTAs: **Prendre rendez-vous** (→ `#contact`) and **Découvrir mes expertises** (→ `#expertises`).
+- A decorative scroll indicator (`.hero-scroll`, `aria-hidden`) is shown below the content.
+
+### About (`#apropos`)
+
+- Two-column layout: portrait photo (responsive `<picture>` element with WebP sources at 360 w and 720 w, PNG fallback) on the left; text on the right.
+- Text includes three value propositions displayed as icon cards: **Confidentialité**, **Réactivité**, **Rigueur**. Each has an inline SVG icon and a short caption.
+
+### Client Reviews (`#avis`)
+
+- Displays a global 5/5 Google rating header with five filled-star SVGs.
+- Carousel (`#reviews-carousel`) loaded dynamically from `/content/reviews.json`. Each review slide shows: star rating, quoted text, author name, and "Avis Google" label.
+- Navigation: previous/next buttons + dot indicators. Autoplay advances every 5 seconds; pauses on `mouseenter` and resumes on `mouseleave`. Clicking a dot jumps directly to that slide. The autoplay timer resets on any manual navigation.
+- If the JSON fetch fails (e.g. local file open), the section renders silently empty.
+
+### Expertises (`#expertises`)
+
+Six `<article class="expertise-card">` cards in a grid:
+
+| Card | Bullet points |
+|---|---|
+| Contrat de travail | Rupture conventionnelle, Contrats de travail, Procédure disciplinaire, Sanction disciplinaire |
+| Licenciement | Licenciement économique / faute / inaptitude, PSE / RCC, Conseil des prud'hommes |
+| Santé au travail | AT, Maladie professionnelle, RPS (burn out, stress), Handicap |
+| Harcèlement & Discrimination | Harcèlement, Discrimination, Burn out, Souffrance au travail |
+| Conseil aux entreprises | Protection sociale, Audit conformité, Convention collective, Négociation collective, CSE, Grèves, Restructurations |
+| Sécurité Sociale & URSSAF | Conflit URSSAF, Cotisations sociales, Contrôle URSSAF, Contestation AT/MP, Contentieux CGSS |
+
+Each card has an inline SVG icon and a short descriptive paragraph.
+
+### Fees (`#honoraires`)
+
+Four fee options displayed side by side:
+
+| Option | Details |
+|---|---|
+| Premier rendez-vous | 200 € HT / 45 min; offered free if a case is opened |
+| Taux horaire & forfait | 230–300 € HT/h depending on case complexity; fixed fees for defined mandates |
+| Abonnement | For ongoing retainer and corporate advisory |
+| Devis sur mesure | For labour-law training sessions |
+
+A pull-quote block states that fees are always disclosed before any engagement.
+
+### Contact (`#contact`)
+
+Two-column layout: contact details on the left, a Netlify form on the right.
+
+**Contact details:** office address (Immeuble Dillon Express, Zone Franche Dillon Stade, 97200 Fort-de-France), phone (`tel:+596659916309`), hours (Mon–Fri 08:00–18:00), email (`amelie.bonnieul@gmail.com`).
+
+**Form** (`id="contact-form"`, `name="contact"`, POST, `data-netlify="true"`):
+- Hidden field `form-name=contact` for Netlify.
+- Honeypot field `bot-field` (visually hidden, `aria-hidden`).
+- Required fields: full name (text), email, subject (select), message (textarea).
+- Optional field: phone (tel).
+- Subject options: `rdv`, `conseil-entreprise`, `prudhomale`, `urssaf`, `autre`.
+- Required consent checkbox for data processing policy.
+- On submit: client-side validation checks required fields, email format (regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`), and consent; shows inline error if any check fails. On pass, POSTs URL-encoded form data to `/` via `fetch`, disables the submit button with text "Envoi en cours…" during the request.
+- On success: shows success message and resets the form. On network error: shows error message suggesting phone contact. Both messages are injected as `<div role="alert">` before the first form child, styled inline (green for success, red for error), and auto-removed after 5 s with a 300 ms opacity fade.
+
+### Footer
+
+- Four-column layout: brand block (logo + tagline), navigation links, expertise list (static text, non-linked), contact details with LinkedIn link.
+- Bottom bar: copyright 2026, bar membership note, and a placeholder "Mentions légales" link.
+
+---
+
+## JavaScript Behaviour Summary (`js/main.js`)
+
+All initialisation runs on `DOMContentLoaded`:
+
+| Function | Behaviour |
+|---|---|
+| `initNavbar` | Adds/removes `scrolled` class on `#navbar` when `window.scrollY > 50`, passive scroll listener. |
+| `initMobileMenu` | Toggle button opens/closes `#nav-menu` and `#nav-toggle` with class `active`; sets `aria-expanded`; locks `body` scroll while open. Closes on any nav-link click or `Escape` key. |
+| `initSmoothScroll` | All `a[href^="#"]` links scroll smoothly, offsetting by the navbar height. |
+| `initRevealAnimations` | `IntersectionObserver` (threshold 0.1) adds class `reveal` initially, then `visible` when 10% of the element enters the viewport. Observed elements: `.expertise-card`, `.about-image`, `.about-text`, `.fees-text`, `.fees-image`, `.contact-info`, `.contact-form-wrapper`. Each element is unobserved after first reveal. |
+| `initContactForm` | See Contact section above. |
+| `initReviewsCarousel` | See Reviews section above. |

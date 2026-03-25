@@ -38,6 +38,7 @@
             "index.cs.md": [
                 "index.html"
             ]
-        }
+        },
+        "codespeak_internals_migrated": true
     }
 }
