@@ -45,17 +45,20 @@
             "desktop_application": false,
             "embedded_application": false,
             "has_django": false,
+            "has_external_apis": false,
             "has_go": false,
             "has_javascript": true,
             "has_node_js": false,
             "has_python": false,
             "has_server": false,
+            "has_social_logins": false,
             "has_sql_database": false,
             "library": false,
             "mobile_application": false,
             "server": false,
             "serverless_application": false,
             "web_application": true
-        }
+        },
+        "external_apis": ".codespeak/external_apis.json"
     }
 }
