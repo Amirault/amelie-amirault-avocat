@@ -1,3 +1,29 @@
 {
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "specs": [
+    "index.cs.md"
+  ],
+  "test_runner_configurations": {
+    "index.cs.md": {
+      "run_all_tests_command": {
+        "command_line": "npx htmlhint -f junit index.html > {tests_report_file} 2>&1"
+      },
+      "run_specified_tests_command": {
+        "command_line": "npx htmlhint -f junit {tests_list} > {tests_report_file} 2>&1"
+      },
+      "run_all_tests_with_coverage_command": {
+        "command_line": "TODO: <command to run all tests with coverage> --junitxml={tests_report_file} --cov=<source_dir> --cov-branch --cov-report=lcov:{tests_coverage_report_file}"
+      },
+      "run_specified_tests_with_coverage_command": {
+        "command_line": "TODO: <command to run specified tests with coverage> {tests_list} --junitxml={tests_report_file} --cov=<source_dir> --cov-branch --cov-report=lcov:{tests_coverage_report_file}"
+      },
+      "non_test_source_regex_include": [
+        "\\.html$"
+      ],
+      "non_test_source_regex_exclude": [],
+      "source_glob_patterns": [
+        "**/*.html"
+      ]
+    }
+  }
 }
