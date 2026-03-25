@@ -60,6 +60,7 @@
             "web_application": true
         },
         "external_apis": ".codespeak/external_apis.json",
-        "commit_message": "Refine lawyer landing page: fix form UX, nav toggle CSS"
+        "commit_message": "Refine lawyer landing page: fix form UX, nav toggle CSS",
+        "methods_to_test": []
     }
 }
