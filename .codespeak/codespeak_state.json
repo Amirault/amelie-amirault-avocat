@@ -39,6 +39,23 @@
                 "index.html"
             ]
         },
-        "codespeak_internals_migrated": true
+        "codespeak_internals_migrated": true,
+        "criteria": {
+            "console_application": false,
+            "desktop_application": false,
+            "embedded_application": false,
+            "has_django": false,
+            "has_go": false,
+            "has_javascript": true,
+            "has_node_js": false,
+            "has_python": false,
+            "has_server": false,
+            "has_sql_database": false,
+            "library": false,
+            "mobile_application": false,
+            "server": false,
+            "serverless_application": false,
+            "web_application": true
+        }
     }
 }
