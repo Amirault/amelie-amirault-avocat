@@ -33,5 +33,11 @@
         },
         "version": "0.2.0"
     },
-    "phases_state": {}
+    "phases_state": {
+        "managed_files": {
+            "index.cs.md": [
+                "index.html"
+            ]
+        }
+    }
 }
