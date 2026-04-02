@@ -1,18 +1,6 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "https://amirault-avocat.fr/*"
-  to = "https://www.amiraultavocats.fr/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://amiraultavocat.fr/*"
-  to = "https://www.amiraultavocats.fr/:splat"
-  status = 301
-  force = true
-
 [[edge_functions]]
   function = "protect-site"
   path = "/*"

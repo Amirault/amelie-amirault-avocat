@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "schema": {
+            "implemented_change_requests": {
+                "type": "file",
+                "relative_path": "implemented_change_requests.json",
+                "format": "json",
+                "by_task": "FinalizeChangeRequest"
+            },
+            "external_apis": {
+                "type": "file",
+                "relative_path": "external_apis.json",
+                "format": "json",
+                "by_task": "AnalyzeExternalApis"
+            },
+            "console_app_dev_command": {
+                "type": "file",
+                "relative_path": "console_app_dev_command.txt",
+                "format": "text",
+                "by_task": "GenerateCliUsageExamples"
+            },
+            "console_app_usage_examples": {
+                "type": "file",
+                "relative_path": "console_app_usage_examples.json",
+                "format": "json",
+                "by_task": "GenerateCliUsageExamples"
+            },
+            "sha_to_checkpoint": {
+                "type": "file",
+                "relative_path": "sha_to_checkpoint.json",
+                "format": "json"
+            }
+        },
+        "version": "0.2.0"
+    },
+    "phases_state": {
+        "managed_files": {
+            "index.cs.md": [
+                "index.html"
+            ]
+        },
+        "codespeak_internals_migrated": true,
+        "criteria": {
+            "console_application": false,
+            "desktop_application": false,
+            "embedded_application": false,
+            "has_django": false,
+            "has_external_apis": false,
+            "has_go": false,
+            "has_javascript": true,
+            "has_node_js": false,
+            "has_python": false,
+            "has_server": false,
+            "has_social_logins": false,
+            "has_sql_database": false,
+            "library": false,
+            "mobile_application": false,
+            "server": false,
+            "serverless_application": false,
+            "web_application": true
+        },
+        "external_apis": ".codespeak/external_apis.json",
+        "commit_message": "Refine lawyer landing page: fix form UX, nav toggle CSS",
+        "methods_to_test": []
+    }
+}

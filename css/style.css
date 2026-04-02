@@ -306,6 +306,20 @@ ul {
     background-color: var(--color-primary);
 }
 
+/* Hamburger → croix (état actif) */
+.nav-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.nav-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 /* ===================================
    Hero
    =================================== */
@@ -542,6 +556,11 @@ ul {
     font-size: 1rem;
     line-height: 1.8;
     margin-bottom: var(--spacing-md);
+}
+
+.about-languages {
+    font-size: 0.9rem;
+    color: var(--color-gray-600);
 }
 
 .about-values {

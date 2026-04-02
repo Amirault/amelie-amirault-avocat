@@ -150,7 +150,7 @@ function initContactForm() {
 
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Envoi en cours...';
+        submitBtn.textContent = 'Envoi en cours\u2026';
         submitBtn.disabled = true;
 
         fetch('/', {
@@ -194,23 +194,24 @@ function showFormMessage(message, type) {
     messageEl.setAttribute('role', 'alert');
     messageEl.textContent = message;
     
-    // Styles inline pour le message
+    // Styles inline pour le message (green for success, red for error)
     messageEl.style.cssText = `
         padding: 1rem;
         margin-bottom: 1rem;
         font-size: 0.9rem;
-        ${type === 'success' 
-            ? 'background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb;' 
-            : 'background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;'}
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        ${type === 'success'
+            ? 'background-color: #28a745; color: #ffffff; border: 1px solid #218838;'
+            : 'background-color: #dc3545; color: #ffffff; border: 1px solid #c82333;'}
     `;
 
     const form = document.getElementById('contact-form');
     form.insertBefore(messageEl, form.firstChild);
 
-    // Auto-suppression après 5 secondes
+    // Auto-suppression après 5 secondes avec fondu 300 ms
     setTimeout(() => {
         messageEl.style.opacity = '0';
-        messageEl.style.transition = 'opacity 0.3s ease';
         setTimeout(() => messageEl.remove(), 300);
     }, 5000);
 }
