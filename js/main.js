@@ -159,7 +159,7 @@ function initContactForm() {
             body: new URLSearchParams(new FormData(form)).toString(),
         })
             .then(() => {
-                showFormMessage('Merci pour votre message ! Je vous recontacterai dans les plus brefs délais.', 'success');
+                showFormMessage('Merci pour votre message ! Nous vous recontacterons dans les plus brefs délais.', 'success');
                 form.reset();
             })
             .catch(() => {
