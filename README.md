@@ -1,4 +1,4 @@
-# 👨‍⚖️ Site Web - Maître Amélie Amirault
+# 👨‍⚖️ Site Web - AMIRAULT AVOCATS
 
 **Cabinet d'avocat spécialisé en droit du travail à Fort-de-France, Martinique**
 
@@ -8,7 +8,7 @@
 
 ## 📋 Table des matières
 
-- [À propos](#-à-propos)
+- [Qui sommes-nous ?](#-qui-sommes-nous-)
 - [Caractéristiques](#-caractéristiques)
 - [Installation](#-installation)
 - [Structure du projet](#-structure-du-projet)
@@ -16,13 +16,13 @@
 - [Déploiement](#-déploiement)
 - [Contact](#-contact)
 
-## 📌 À propos
+## 📌 Qui sommes-nous ?
 
-Site vitrine officiel de **Maître Amélie Amirault**, avocat spécialisée en droit du travail, droit social et droit de la Sécurité Sociale exerçant à Fort-de-France, Martinique.
+Site vitrine officiel de **AMIRAULT AVOCATS**, cabinet d'avocats spécialisé en droit du travail, droit social et droit de la Sécurité Sociale exerçant à Fort-de-France, Martinique.
 
 | Information | Détails |
 |------------|---------|
-| **Avocat** | Maître Amélie Amirault |
+| **Cabinet** | AMIRAULT AVOCATS |
 | **Spécialités** | Droit du travail, Droit social, Sécurité Sociale |
 | **Localisation** | Fort-de-France, Martinique (97200) |
 | **Téléphone** | 06 59 91 63 09 |
@@ -102,7 +102,7 @@ Les contributions sont bienvenues ! Pour contribuer :
 
 ## 📞 Contact
 
-**Maître Amélie Amirault**
+**AMIRAULT AVOCATS**
 - 📱 Téléphone : 06 59 91 63 09
 - 📧 Email : contact@amelie-amirault-avocat.fr
 - 📍 Fort-de-France, Martinique
@@ -114,4 +114,4 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-**© 2026 Maître Amélie Amirault. Tous droits réservés.**
+**© 2026 AMIRAULT AVOCATS. Tous droits réservés.**
