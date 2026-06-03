@@ -1134,6 +1134,7 @@ ul {
     font-weight: 600;
     color: var(--color-white);
     display: block;
+    line-height: 1.15;
 }
 
 .footer-logo span {
