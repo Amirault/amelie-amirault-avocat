@@ -1137,6 +1137,8 @@ ul {
 }
 
 .footer-logo span {
+    display: block;
+    margin-top: var(--spacing-xs);
     background: linear-gradient(135deg, var(--color-secondary) 0%, #d4b878 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
