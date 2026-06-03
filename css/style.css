@@ -236,6 +236,7 @@ ul {
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--color-secondary);
+    font-style: italic;
 }
 
 .nav-menu {
