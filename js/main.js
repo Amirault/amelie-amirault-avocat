@@ -226,7 +226,7 @@ function initReviewsCarousel() {
 
     if (!track) return;
 
-    fetch('/content/reviews.json')
+    fetch('/content/reviews.json?v=7')
         .then(res => res.json())
         .then(data => {
             const reviews = data.reviews;
