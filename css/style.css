@@ -205,20 +205,6 @@ ul {
     gap: 0.75rem;
 }
 
-.nav-logo-img {
-    height: 48px;
-    width: auto;
-    display: block;
-    border-radius: 4px;
-}
-
-.footer-logo-img {
-    height: 56px;
-    width: auto;
-    display: block;
-    border-radius: 4px;
-}
-
 .nav-logo-text-group {
     display: flex;
     flex-direction: column;
