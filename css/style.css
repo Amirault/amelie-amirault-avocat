@@ -227,7 +227,7 @@ ul {
     transition: filter var(--transition-normal);
 }
 
-/* White logo on dark hero, switches to original on scroll */
+/* Default: dark logo visible, white hidden */
 .nav-logo-img-light {
     display: none;
 }
@@ -236,7 +236,7 @@ ul {
     display: block;
 }
 
-/* On homepage (has hero), show white logo initially */
+/* On homepage (has hero), show white logo initially, hide dark */
 body:has(.hero) .nav-logo-img-light {
     display: block;
 }
@@ -245,13 +245,13 @@ body:has(.hero) .nav-logo-img-dark {
     display: none;
 }
 
-/* When scrolled, always show dark logo */
-.navbar.scrolled .nav-logo-img-light {
-    display: none !important;
+/* When scrolled on homepage, switch to dark logo */
+body:has(.hero) .navbar.scrolled .nav-logo-img-light {
+    display: none;
 }
 
-.navbar.scrolled .nav-logo-img-dark {
-    display: block !important;
+body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
+    display: block;
 }
 
 .logo-text {
