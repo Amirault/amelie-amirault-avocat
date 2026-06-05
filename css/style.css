@@ -219,11 +219,16 @@ ul {
 }
 
 .nav-logo-img {
-    height: 48px;
+    height: 52px;
     width: auto;
     display: block;
-    border-radius: 2px;
     flex-shrink: 0;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+    transition: filter var(--transition-normal);
+}
+
+.navbar.scrolled .nav-logo-img {
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
 }
 
 .logo-text {
