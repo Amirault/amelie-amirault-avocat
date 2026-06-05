@@ -227,8 +227,21 @@ ul {
     transition: filter var(--transition-normal);
 }
 
-.navbar.scrolled .nav-logo-img {
-    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+/* White logo on dark hero, switches to original on scroll */
+.nav-logo-img-light {
+    display: block;
+}
+
+.nav-logo-img-dark {
+    display: none;
+}
+
+.navbar.scrolled .nav-logo-img-light {
+    display: none;
+}
+
+.navbar.scrolled .nav-logo-img-dark {
+    display: block;
 }
 
 .logo-text {
