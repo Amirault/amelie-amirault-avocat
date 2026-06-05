@@ -229,19 +229,29 @@ ul {
 
 /* White logo on dark hero, switches to original on scroll */
 .nav-logo-img-light {
-    display: block;
+    display: none;
 }
 
 .nav-logo-img-dark {
+    display: block;
+}
+
+/* On homepage (has hero), show white logo initially */
+body:has(.hero) .nav-logo-img-light {
+    display: block;
+}
+
+body:has(.hero) .nav-logo-img-dark {
     display: none;
 }
 
+/* When scrolled, always show dark logo */
 .navbar.scrolled .nav-logo-img-light {
-    display: none;
+    display: none !important;
 }
 
 .navbar.scrolled .nav-logo-img-dark {
-    display: block;
+    display: block !important;
 }
 
 .logo-text {
