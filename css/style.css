@@ -1211,6 +1211,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     color: var(--color-secondary);
 }
 
+.footer-link-gold {
+    color: var(--color-secondary) !important;
+}
+
 .footer-links li:not(:has(a)) {
     font-size: 0.9rem;
 }
