@@ -13,10 +13,6 @@
   status = 301
   force = true
 
-[[edge_functions]]
-  function = "protect-site"
-  path = "/*"
-
 [[headers]]
   for = "/*"
   [headers.values]
