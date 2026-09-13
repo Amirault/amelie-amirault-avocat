@@ -115,3 +115,5 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 ---
 
 **© 2026 AMIRAULT AVOCATS. Tous droits réservés.**
+
+<!-- dust auto-merge end-to-end test marker (invisible) -->
