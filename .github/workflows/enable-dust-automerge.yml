@@ -15,7 +15,9 @@ permissions:
 jobs:
   enable-auto-merge:
     if: >
-      github.event.pull_request.user.login == 'dust-agent[bot]' &&
+      (github.event.pull_request.user.login == 'Amirault' ||
+       github.event.pull_request.user.login == 'dust-agent' ||
+       github.event.pull_request.user.login == 'dust-agent[bot]') &&
       github.event.pull_request.base.ref == 'master' &&
       startsWith(github.event.pull_request.head.ref, 'dust/')
 
