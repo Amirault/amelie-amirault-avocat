@@ -108,6 +108,10 @@ Les contributions sont bienvenues ! Pour contribuer :
 - 📍 Fort-de-France, Martinique
 - 🌐 Website : https://amelie-amirault-avocat.fr
 
+## 🧪 Validation de pull request
+
+Cette section est ajoutée pour tester le workflow de pull request depuis une branche dédiée `dust/`.
+
 ## 📄 Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
