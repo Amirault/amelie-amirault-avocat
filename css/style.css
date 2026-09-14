@@ -1271,9 +1271,14 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-brand {
+    text-align: center;
+}
+
 .footer-brand-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.6rem;
     margin-bottom: var(--spacing-sm);
 }
@@ -1289,8 +1294,9 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     width: 220px;
     height: auto;
     max-height: 72px;
+    margin: 0 auto;
     object-fit: contain;
-    object-position: left center;
+    object-position: center;
 }
 
 .footer-logo {
