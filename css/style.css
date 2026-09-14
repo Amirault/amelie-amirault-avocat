@@ -350,11 +350,12 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     min-height: 100vh;
     min-height: 100svh; /* iOS Safari : exclut la barre d'adresse */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background: linear-gradient(135deg, #1a2634 0%, #0f1a24 50%, #1a2634 100%);
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .hero::before {
@@ -383,10 +384,12 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .hero-logo-title {
+    position: relative;
+    z-index: 10;
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: var(--spacing-xl) auto 0;
+    width: auto;
+    margin: 0 auto var(--spacing-lg);
 }
 
 .hero-logo {
@@ -525,7 +528,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     }
 
     .hero-content {
-        padding: calc(80px + var(--spacing-xl)) var(--spacing-md) var(--spacing-xl);
+        padding: 0 var(--spacing-md) var(--spacing-xl);
     }
 
     .hero-scroll {
@@ -1536,7 +1539,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     }
 
     .hero-content {
-        padding: calc(70px + var(--spacing-md)) var(--spacing-md) var(--spacing-lg);
+        padding: 0 var(--spacing-md) var(--spacing-lg);
     }
 
     .hero-tagline {
