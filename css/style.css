@@ -380,6 +380,20 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     pointer-events: none;
 }
 
+.hero-motto {
+    position: absolute;
+    top: clamp(7rem, 14vh, 10rem);
+    left: clamp(var(--spacing-md), 4vw, var(--spacing-2xl));
+    z-index: 10;
+    max-width: 300px;
+    font-family: var(--font-heading);
+    font-size: clamp(0.9rem, 1.3vw, 1.15rem);
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0.08em;
+    color: var(--color-secondary);
+}
+
 .hero-logo-title {
     position: relative;
     z-index: 10;
@@ -521,6 +535,14 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 /* Hero responsive */
 @media (max-width: 768px) {
+    .hero-motto {
+        top: 100px;
+        left: var(--spacing-md);
+        max-width: 90px;
+        font-size: 0.7rem;
+        letter-spacing: 0.06em;
+    }
+
     .hero {
         padding-top: 90px;
     }
@@ -1532,6 +1554,13 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 @media (max-width: 480px) {
+    .hero-motto {
+        top: 90px;
+        left: var(--spacing-sm);
+        max-width: 80px;
+        font-size: 0.65rem;
+    }
+
     .hero-logo {
         width: 150px;
         max-height: 125px;
