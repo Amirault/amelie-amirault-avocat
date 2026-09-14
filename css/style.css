@@ -1134,6 +1134,49 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 /* ===================================
+   Page des mentions légales
+   =================================== */
+.legal-page-header {
+    background-color: var(--color-primary);
+    padding: var(--spacing-lg) 0;
+}
+
+.legal-page-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.legal-page-brand {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.05;
+    color: var(--color-white);
+}
+
+.legal-page-brand span {
+    display: block;
+    margin-top: var(--spacing-xs);
+    color: var(--color-secondary);
+}
+
+.legal-page-back {
+    color: var(--color-gray-300);
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.legal-page-back:hover {
+    color: var(--color-secondary);
+}
+
+.legal-page-main {
+    min-height: calc(100vh - 112px);
+}
+
+/* ===================================
    Mentions légales
    =================================== */
 .legal-notice {
@@ -1147,6 +1190,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     margin: 0 auto;
 }
 
+.legal-notice-content h2,
 .legal-notice-content h3 {
     font-family: var(--font-heading);
     font-size: 1.35rem;
