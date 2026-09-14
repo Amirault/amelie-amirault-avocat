@@ -382,15 +382,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     pointer-events: none;
 }
 
-.hero-logo-container {
-    position: absolute;
-    top: 120px;
-    left: clamp(var(--spacing-sm), 4vw, var(--spacing-2xl));
-    z-index: 10;
-}
-
 .hero-logo-title {
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
 }
 
 .hero-logo {
@@ -399,7 +394,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     max-height: 180px;
     height: auto;
     object-fit: contain;
-    object-position: left center;
+    object-position: center;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
@@ -523,11 +518,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 /* Hero responsive */
 @media (max-width: 768px) {
-    .hero-logo-container {
-        top: 100px;
-        left: var(--spacing-md);
-    }
-
     .hero-logo {
         width: 150px;
         max-height: 120px;
@@ -1535,11 +1525,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 @media (max-width: 480px) {
-    .hero-logo-container {
-        top: 90px;
-        left: var(--spacing-sm);
-    }
-
     .hero-logo {
         width: 120px;
         max-height: 100px;
@@ -1632,5 +1617,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 
