@@ -387,6 +387,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     justify-content: center;
     width: 100vw;
     margin: 0 0 var(--spacing-lg) calc(50% - 50vw);
+    transform: translateX(clamp(18px, 3.5vw, 48px));
 }
 
 .hero-logo {
