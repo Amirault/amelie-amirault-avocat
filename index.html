@@ -249,7 +249,7 @@
     <link rel="manifest" href="/site.webmanifest?v=3">
     
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="stylesheet" href="css/style.css?v=11">
     
 </head>
 <body>
@@ -277,6 +277,11 @@
 
     <!-- Hero Section -->
     <header class="hero" id="accueil">
+        <!-- Logo visible dans le hero -->
+        <div class="hero-logo-container">
+            <img src="images/logo-amirault-white.png?v=12" alt="AMIRAULT AVOCATS" class="hero-logo">
+        </div>
+        
         <div class="hero-content">
             <p class="hero-subtitle">Barreau de Martinique</p>
             <h1 class="hero-title">AMIRAULT<br><span>AVOCATS</span></h1>
@@ -350,22 +355,19 @@
                             </div>
                             <div class="value-text">
                                 <h3>Réactivité</h3>
-                                <p>Disponibilité et écoute</p>
+                                <p>Réponse rapide et pertinente</p>
                             </div>
                         </div>
                         <div class="value">
                             <div class="value-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                    <polyline points="14 2 14 8 20 8"/>
-                                    <line x1="16" y1="13" x2="8" y2="13"/>
-                                    <line x1="16" y1="17" x2="8" y2="17"/>
-                                    <polyline points="10 9 9 9 8 9"/>
+                                    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/>
+                                    <polyline points="13 2 13 9 20 9"/>
                                 </svg>
                             </div>
                             <div class="value-text">
                                 <h3>Rigueur</h3>
-                                <p>Excellence juridique</p>
+                                <p>Respect des délais et obligations</p>
                             </div>
                         </div>
                     </div>
@@ -374,313 +376,220 @@
         </div>
     </section>
 
-    <!-- Avis clients -->
-    <section class="reviews-section" id="avis">
-        <div class="container">
-            <div class="reviews-section-inner">
-                <div class="reviews-rating-header">
-                    <div class="reviews-stars-global" aria-hidden="true">
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    </div>
-                    <p class="reviews-rating-text">Note globale <strong>5 / 5</strong> sur Google</p>
-                </div>
-                <div class="reviews-carousel" id="reviews-carousel" aria-label="Avis clients">
-                    <div class="reviews-track" id="reviews-track" aria-live="polite" aria-atomic="false"></div>
-                    <div class="reviews-nav">
-                        <button class="reviews-btn" id="reviews-prev" aria-label="Avis précédent">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-                        </button>
-                        <div class="reviews-dots" id="reviews-dots"></div>
-                        <button class="reviews-btn" id="reviews-next" aria-label="Avis suivant">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Expertises -->
+    <!-- Expertises Section -->
     <section class="expertises" id="expertises">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Domaines d'intervention</span>
-                <h2 class="section-title">Nos expertises</h2>
-                <p class="section-description">
-                    Nous mettons notre expertise au service de vos enjeux en droit social, droit de la protection sociale
-                    et droit de la sécurité sociale.
-                </p>
+                <span class="section-label">Nos expertises</span>
+                <h2 class="section-title">Comment pouvons-nous vous aider ?</h2>
             </div>
-            <div class="expertise-grid">
-                <article class="expertise-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                            <circle cx="12" cy="7" r="4"/>
+            <div class="expertises-grid">
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 8v4m-2 2h4"/>
                         </svg>
                     </div>
-                    <h3>Contrat de travail</h3>
-                    <p>Rédaction, modification et rupture du contrat de travail. Accompagnement sur toutes les étapes de la relation contractuelle.</p>
-                    <ul class="card-list">
-                        <li>Rupture conventionnelle</li>
-                        <li>Contrats de travail</li>
-                        <li>Procédure disciplinaire</li>
-                        <li>Sanction disciplinaire</li>
-                    </ul>
-                </article>
-
-                <article class="expertise-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    <h3>Conseil en droit du travail</h3>
+                    <p>Stratégie RH, gestion des risques sociaux, audit social et conformité législative.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z M2 17l10 5 10-5 M2 12l10 5 10-5"/>
                         </svg>
                     </div>
-                    <h3>Licenciement</h3>
-                    <p>Accompagnement dans les procédures de licenciement, quelle qu'en soit la cause.</p>
-                    <ul class="card-list">
-                        <li>Licenciement pour motif économique</li>
-                        <li>Licenciement pour faute</li>
-                        <li>Licenciement pour inaptitude</li>
-                        <li>Procédures collectives (PSE, RCC...)</li>
-                        <li>Conseil des prud'hommes</li>
-                    </ul>
-                </article>
-
-                <article class="expertise-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    <h3>Contentieux prud'homal</h3>
+                    <p>Représentation devant les prud'hommes pour les litiges du travail.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <circle cx="12" cy="12" r="1"/>
+                            <circle cx="19" cy="12" r="1"/>
+                            <circle cx="5" cy="12" r="1"/>
                         </svg>
                     </div>
-                    <h3>Santé au travail</h3>
-                    <p>Accompagnement sur les problématiques de santé et de sécurité au travail.</p>
-                    <ul class="card-list">
-                        <li>Accident du travail</li>
-                        <li>Maladie professionnelle</li>
-                        <li>Risques psycho-sociaux (burn out, stress au travail, etc)</li>
-                        <li>Handicap</li>
-                    </ul>
-                </article>
-
-                <article class="expertise-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                            <path d="M9 12l2 2 4-4"/>
+                    <h3>Ruptures et transitions</h3>
+                    <p>Licenciement, rupture conventionnelle, démission... une solution adaptée à votre situation.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M14 14.5v-2.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v2.5"/>
+                            <line x1="6" y1="10" x2="6" y2="14"/>
+                            <line x1="18" y1="10" x2="18" y2="14"/>
                         </svg>
                     </div>
-                    <h3>Harcèlement & Discrimination</h3>
-                    <p>Accompagnement dans les situations de harcèlement et de discrimination au travail.</p>
-                    <ul class="card-list">
-                        <li>Harcèlement au travail</li>
-                        <li>Discrimination au travail</li>
-                        <li>Burn out</li>
-                        <li>Souffrance au travail</li>
-                    </ul>
-                </article>
-
-                <article class="expertise-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    <h3>Droit de la sécurité sociale</h3>
+                    <p>Contentieux URSSAF, affiliation, cotisations et prestations sociales.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                         </svg>
                     </div>
-                    <h3>Conseil aux entreprises</h3>
-                    <p>Accompagnement juridique des entreprises et cadres dirigeants dans leur gestion sociale.</p>
-                    <ul class="card-list">
-                        <li>Protection sociale</li>
-                        <li>Conformité sociale (audit)</li>
-                        <li>Convention collective</li>
-                        <li>Négociation collective, accords collectifs</li>
-                        <li>CSE (suivi, mise en place des élections professionnelles, contestation d'expertise, etc)</li>
-                        <li>Mouvements sociaux, grèves</li>
-                        <li>Restructurations</li>
-                    </ul>
-                </article>
-
-                <article class="expertise-card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5"/>
-                            <path d="M2 12l10 5 10-5"/>
+                    <h3>Harcèlement au travail</h3>
+                    <p>Protection des droits, discrimination, agissements répréhensibles.</p>
+                </div>
+                <div class="expertise-card">
+                    <div class="expertise-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M4 7v10a6 6 0 0 0 6 6h4a6 6 0 0 0 6-6V7"/>
+                            <line x1="9" y1="5" x2="15" y2="5"/>
+                            <line x1="8" y1="9" x2="16" y2="9"/>
                         </svg>
                     </div>
-                    <h3>Sécurité sociale / URSSAF</h3>
-                    <p>Expertise en droit de la Sécurité Sociale et gestion des conflits CGSS.</p>
-                    <ul class="card-list">
-                        <li>Conflit URSSAF</li>
-                        <li>Cotisations sociales</li>
-                        <li>Contrôle URSSAF</li>
-                        <li>Contestation AT/MP</li>
-                        <li>Contentieux CGSS</li>
-                    </ul>
-                </article>
+                    <h3>Formations en droit social</h3>
+                    <p>Formations sur mesure combinant technicité, pédagogie et sens opérationnel.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Honoraires -->
-    <section class="fees" id="honoraires">
+    <!-- Processus Section -->
+    <section class="processus">
         <div class="container">
-            <div class="fees-content">
-                <div class="fees-text">
-                    <span class="section-label">Transparence</span>
-                    <h2 class="section-title">Honoraires</h2>
-                    <p>
-                        Nous nous engageons à vous présenter une tarification claire et adaptée à votre situation.
-                        Les honoraires sont fixés en accord avec vous, selon les modalités suivantes :
-                    </p>
-                    <div class="fees-options">
-                        <div class="fee-option fee-option-highlight">
-                            <h3>Premier rendez-vous</h3>
-                            <p><strong>250€ HT</strong> pour 45 minutes<br><em>Offert si ouverture de dossier</em></p>
-                        </div>
-                        <div class="fee-option">
-                            <h3>Taux horaire &amp; forfait</h3>
-                            <p>Taux horaire : entre <strong>230 et 300€ de l'heure HT</strong> selon complexité du dossier.<br>Forfait pour des missions prédéfinies : rédaction d'actes, négociations, procédures, contentieux.</p>
-                        </div>
-                        <div class="fee-option">
-                            <h3>Abonnement</h3>
-                            <p>Pour le suivi régulier et le conseil aux entreprises.</p>
-                        </div>
-                        <div class="fee-option">
-                            <h3>Devis sur mesure</h3>
-                            <p>Formations en droit social et droit de la sécurité sociale.</p>
-                        </div>
+            <div class="section-header">
+                <span class="section-label">Notre processus</span>
+                <h2 class="section-title">Votre parcours en 4 étapes</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h3>Prise de contact</h3>
+                        <p>Vous nous contactez par téléphone ou email pour une première écoute de votre problématique.</p>
                     </div>
                 </div>
-                <div class="fees-image">
-                    <div class="quote-block">
-                        <svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
-                        </svg>
-                        <blockquote>
-                            Le montant des honoraires vous sera systématiquement présenté
-                            avant toute intervention, garantissant une totale transparence
-                            sur le coût de notre prestation.
-                        </blockquote>
-                        <svg class="quote-icon quote-icon-close" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/>
-                        </svg>
+                <div class="timeline-item">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h3>Premier rendez-vous</h3>
+                        <p>45 minutes de consultation pour analyser votre situation, comprendre vos enjeux et proposer une stratégie.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h3>Accompagnement</h3>
+                        <p>Nous vous conseillons en prévention ou vous représentons en cas de contentieux devant les juridictions compétentes.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h3>Suivi et conseil</h3>
+                        <p>Vous bénéficiez d'un suivi continu de votre dossier et du conseil adapté à l'évolution de votre situation.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Honoraires Section -->
+    <section class="honoraires" id="honoraires">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Tarification</span>
+                <h2 class="section-title">Honoraires transparents et adaptés</h2>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Premier rendez-vous</h3>
+                    <div class="pricing-amount">250€ <span>HT</span></div>
+                    <p class="pricing-note">Consultation de 45 minutes</p>
+                    <ul class="pricing-features">
+                        <li>Analyse de votre situation</li>
+                        <li>Conseil stratégique initial</li>
+                        <li>Devis personnalisé si ouverture de dossier</li>
+                    </ul>
+                </div>
+                <div class="pricing-card highlight">
+                    <h3>Accompagnement régulier</h3>
+                    <div class="pricing-amount">230€ <span>à 300€</span></div>
+                    <p class="pricing-note">Par heure de travail</p>
+                    <ul class="pricing-features">
+                        <li>Flexible selon vos besoins</li>
+                        <li>Tarif dégréssif possible</li>
+                        <li>Forfaits disponibles</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <h3>Formations</h3>
+                    <div class="pricing-amount">Devis</div>
+                    <p class="pricing-note">Sur mesure selon durée</p>
+                    <ul class="pricing-features">
+                        <li>Contenu adapté à vos enjeux</li>
+                        <li>Pédagogie et sens opérationnel</li>
+                        <li>Support de formation fourni</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="section-label">Contact</span>
-                    <h2 class="section-title">Prenons<br>rendez-vous</h2>
-                    <p>
-                        Vous avez une question ou souhaitez nous confier votre dossier ? 
-                        N'hésitez pas à nous contacter pour un premier échange.
-                    </p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Cabinet</h3>
-                                <p>10 rue de la retraite<br>Redoute<br>97200 FORT DE FRANCE</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Téléphone</h3>
-                                <p><a href="tel:+596659916309">06 59 91 63 09</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <polyline points="12 6 12 12 16 14"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Horaires</h3>
-                                <p>Lundi - Vendredi<br>08h00 - 18h00</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                    <polyline points="22,6 12,13 2,6"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p><a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a></p>
-                            </div>
-                        </div>
+            <div class="section-header">
+                <span class="section-label">Contact</span>
+                <h2 class="section-title">Parlons de votre dossier</h2>
+                <p class="section-description">Contactez-nous pour une première consultation gratuite de 15 minutes sans engagement.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h3>Téléphone</h3>
+                        <p><a href="tel:+33659916309">06 59 91 63 09</a></p>
+                        <p class="contact-detail">Lundi à vendredi, 8h-18h</p>
+                    </div>
+                    <div class="contact-method">
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a></p>
+                        <p class="contact-detail">Réponse sous 24h</p>
+                    </div>
+                    <div class="contact-method">
+                        <h3>Adresse</h3>
+                        <p>10 rue de la retraite, Redoute<br>97200 Fort-de-France<br>Martinique</p>
                     </div>
                 </div>
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-                        <input type="hidden" name="form-name" value="contact">
-                        <p class="form-honeypot" aria-hidden="true">
-                            <label>Ne pas remplir <input name="bot-field"></label>
-                        </p>
-                        <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="company">Raison sociale</label>
-                            <input type="text" id="company" name="company">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Téléphone</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Objet *</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Sélectionnez un sujet</option>
-                                <option value="rdv">Demande de rdv</option>
-                                <option value="conseil-entreprise">Conseil entreprise</option>
-                                <option value="prudhomale">Procédure prud'homale</option>
-                                <option value="urssaf">Procédure URSSAF</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Décrivez brièvement votre situation..."></textarea>
-                        </div>
-                        <div class="form-group form-consent">
-                            <input type="checkbox" id="consent" name="consent" required>
-                            <label for="consent">J'accepte que mes données soient traitées par le cabinet dans le respect des règles de confidentialité.</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">Envoyer ma demande</button>
-                    </form>
-                </div>
+                <form class="contact-form" method="POST" action="#">
+                    <div class="form-group">
+                        <label for="name">Nom complet <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Objet <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">-- Sélectionnez un sujet --</option>
+                            <option value="licenciement">Licenciement</option>
+                            <option value="rupture">Rupture conventionnelle</option>
+                            <option value="harcelement">Harcèlement au travail</option>
+                            <option value="prud">Contentieux prud'hommes</option>
+                            <option value="securite-sociale">Droit de la sécurité sociale</option>
+                            <option value="formation">Formation</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer mon message</button>
+                </form>
             </div>
         </div>
     </section>
@@ -691,14 +600,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-brand-header">
-                        <span class="footer-logo">AMIRAULT<br><span>AVOCATS</span></span>
-                    </div>
-                    <p>Conseil stratégique en droit du travail<br>et droit de la sécurité sociale</p>
+                <div class="footer-section">
+                    <h3>AMIRAULT AVOCATS</h3>
+                    <p>Cabinet d'avocats expert en droit du travail, droit social et sécurité sociale à Fort-de-France, Martinique.</p>
                 </div>
-                <div class="footer-links">
-                    <h3>Navigation</h3>
+                <div class="footer-section">
+                    <h3>Liens utiles</h3>
                     <ul>
                         <li><a href="#accueil">Accueil</a></li>
                         <li><a href="#quisommesnous">Qui sommes-nous ?</a></li>
@@ -707,44 +614,33 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h3>Expertises</h3>
-                    <ul>
-                        <li>Droit du travail</li>
-                        <li>Licenciement</li>
-                        <li>Restructurations</li>
-                        <li>AT/MP</li>
-                        <li>Harcèlement</li>
-                        <li>Contentieux prud'homal</li>
-                        <li>Contentieux URSSAF / CGSS</li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
+                <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>10 rue de la retraite<br>Redoute<br>97200 FORT DE FRANCE</p>
-                    <p><a href="tel:+596****6309">06 59 91 63 09</a></p>
-                    <p><a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a></p>
-                    <div class="footer-social">
-                        <a href="https://fr.linkedin.com/in/am%C3%A9lie-bonnieul" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de AMIRAULT AVOCATS" class="footer-social-link">
-                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-                                <rect x="2" y="9" width="4" height="12"/>
-                                <circle cx="4" cy="4" r="2"/>
-                            </svg>
-                        </a>
-                    </div>
+                    <p>
+                        <strong>Téléphone :</strong><br>
+                        <a href="tel:+33659916309">06 59 91 63 09</a>
+                    </p>
+                    <p>
+                        <strong>Email :</strong><br>
+                        <a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a>
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Adresse</h3>
+                    <p>
+                        10 rue de la retraite<br>
+                        Redoute<br>
+                        97200 Fort-de-France<br>
+                        Martinique
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 AMIRAULT AVOCATS. Tous droits réservés.</p>
-                <p class="footer-legal">
-                    Barreau de Martinique | N° SIRET 10955063200011 | 
-                    <a href="#">Mentions légales</a>
-                </p>
+                <p>&copy; 2024 AMIRAULT AVOCATS. Tous droits réservés. | <a href="#">Mentions légales</a></p>
             </div>
         </div>
     </footer>
 
-    <script src="js/main.js?v=10"></script>
+    <script src="js/script.js?v=8"></script>
 </body>
 </html>
