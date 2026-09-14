@@ -478,7 +478,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     font-size: 1.2rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.75);
-    margin-bottom: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
@@ -1563,7 +1563,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
     .hero-tagline {
         font-size: 1rem;
-        margin-bottom: var(--spacing-xl);
+        margin-bottom: var(--spacing-lg);
     }
     
     .contact-form-wrapper {
