@@ -349,10 +349,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     position: relative;
     min-height: 100vh;
     min-height: 100svh; /* iOS Safari : exclut la barre d'adresse */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    display: block;
     background: linear-gradient(135deg, #1a2634 0%, #0f1a24 50%, #1a2634 100%);
     overflow: hidden;
     padding-top: 100px;
@@ -386,17 +383,18 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 .hero-logo-title {
     position: relative;
     z-index: 10;
-    display: flex;
-    justify-content: center;
-    width: auto;
+    display: block;
+    width: 100%;
     margin: 0 auto var(--spacing-lg);
+    text-align: center;
 }
 
 .hero-logo {
     display: block;
-    width: clamp(180px, 20vw, 260px);
-    max-height: 180px;
+    width: clamp(180px, 18vw, 220px);
+    max-height: 160px;
     height: auto;
+    margin: 0 auto;
     object-fit: contain;
     object-position: center;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
@@ -405,10 +403,11 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 .hero-content {
     position: relative;
     z-index: 10;
-    text-align: center;
-    padding: 0 var(--spacing-3xl) var(--spacing-3xl);
-    max-width: 1000px;
     width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-3xl) var(--spacing-3xl);
+    text-align: center;
 }
 
 .hero-subtitle {
@@ -522,6 +521,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 /* Hero responsive */
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 90px;
+    }
+
     .hero-logo {
         width: 150px;
         max-height: 120px;
