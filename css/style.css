@@ -1322,6 +1322,15 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     line-height: 1.6;
 }
 
+.footer-motto {
+    color: var(--color-secondary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+
 .footer h3 {
     font-size: 0.875rem;
     font-weight: 600;
