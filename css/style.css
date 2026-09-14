@@ -385,12 +385,13 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     top: clamp(7rem, 14vh, 10rem);
     left: clamp(var(--spacing-md), 4vw, var(--spacing-2xl));
     z-index: 10;
-    max-width: 300px;
+    max-width: none;
     font-family: var(--font-heading);
-    font-size: clamp(0.9rem, 1.3vw, 1.15rem);
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
     font-weight: 600;
     line-height: 1.45;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
     color: var(--color-secondary);
 }
 
@@ -538,9 +539,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     .hero-motto {
         top: 100px;
         left: var(--spacing-md);
-        max-width: 90px;
-        font-size: 0.7rem;
-        letter-spacing: 0.06em;
+        max-width: 120px;
+        font-size: 0.62rem;
+        letter-spacing: 0.05em;
+        white-space: normal;
     }
 
     .hero {
@@ -1557,8 +1559,9 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     .hero-motto {
         top: 90px;
         left: var(--spacing-sm);
-        max-width: 80px;
-        font-size: 0.65rem;
+        max-width: 105px;
+        font-size: 0.58rem;
+        white-space: normal;
     }
 
     .hero-logo {
