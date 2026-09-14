@@ -1257,6 +1257,14 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     flex-shrink: 0;
 }
 
+.footer-logo-img {
+    width: 220px;
+    height: auto;
+    max-height: 72px;
+    object-fit: contain;
+    object-position: left center;
+}
+
 .footer-logo {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -1318,6 +1326,8 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .footer-social {
+    display: flex;
+    justify-content: center;
     margin-top: var(--spacing-sm);
 }
 
