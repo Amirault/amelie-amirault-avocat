@@ -385,7 +385,8 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 .hero-logo-title {
     display: flex;
     justify-content: center;
-    margin: 0 auto var(--spacing-lg);
+    width: 100vw;
+    margin: 0 0 var(--spacing-lg) calc(50% - 50vw);
 }
 
 .hero-logo {
