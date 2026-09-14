@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="fr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mentions légales - AMIRAULT AVOCATS</title>
+    <meta name="description" content="Mentions légales et informations légales du cabinet AMIRAULT AVOCATS, avocat en droit du travail à Fort-de-France, Martinique.">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"></noscript>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=3">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=3">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=3">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=3">
+    <link rel="manifest" href="/site.webmanifest?v=3">
+    
+    <style>
+        /* ===== Variables & Reset ===== */
+        :root {
+            --color-primary: #1a2634;
+            --color-secondary: #c9a961;
+            --color-accent: #8b7355;
+            --color-dark: #0f1419;
+            --color-light: #f8f7f4;
+            --color-white: #ffffff;
+            --color-gray-600: #525252;
+            --color-gray-700: #404040;
+            --color-gray-800: #262626;
+            
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-2xl: 5rem;
+            
+            --transition-normal: 0.3s ease;
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            font-weight: 400;
+            line-height: 1.7;
+            color: var(--color-gray-700);
+            background-color: var(--color-white);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: color var(--transition-normal);
+        }
+
+        a:hover {
+            color: var(--color-secondary);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ===== Navigation ===== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: var(--spacing-md) 0;
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-md);
+            transition: all var(--transition-normal);
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .nav-logo-img {
+            height: 52px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .nav-link {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: var(--color-gray-700);
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-secondary);
+            transition: width var(--transition-normal);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* ===== Header ===== */
+        .page-header {
+            margin-top: 80px;
+            padding: 60px var(--spacing-md);
+            background: linear-gradient(135deg, var(--color-primary) 0%, #0f1a24 100%);
+            color: var(--color-white);
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        /* ===== Container ===== */
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* ===== Content ===== */
+        .content {
+            padding: var(--spacing-2xl) 0;
+        }
+
+        .content h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-top: 40px;
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-sm);
+            border-bottom: 2px solid var(--color-secondary);
+        }
+
+        .content h2:first-child {
+            margin-top: 0;
+        }
+
+        .content p {
+            margin-bottom: var(--spacing-md);
+            text-align: justify;
+        }
+
+        .content strong {
+            color: var(--color-primary);
+        }
+
+        .content ul {
+            margin-left: 20px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .info-box {
+            background-color: var(--color-light);
+            padding: var(--spacing-lg);
+            border-left: 4px solid var(--color-secondary);
+            margin: var(--spacing-lg) 0;
+            border-radius: 4px;
+        }
+
+        .info-box p {
+            margin-bottom: 10px;
+        }
+
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc {
+            background-color: var(--color-light);
+            padding: var(--spacing-lg);
+            border-radius: 4px;
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .toc h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .toc ul {
+            margin-left: 0;
+        }
+
+        .toc li {
+            margin-bottom: 12px;
+        }
+
+        .toc a {
+            color: var(--color-secondary);
+        }
+
+        /* ===== Footer ===== */
+        .footer {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-2xl) 0 var(--spacing-lg);
+            margin-top: var(--spacing-2xl);
+        }
+
+        .footer-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-2xl);
+            margin-bottom: var(--spacing-2xl);
+            padding-bottom: var(--spacing-2xl);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-secondary);
+        }
+
+        .footer-section ul {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+        }
+
+        .footer-section a {
+            opacity: 0.9;
+            transition: opacity var(--transition-normal);
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            color: var(--color-secondary);
+        }
+
+        .footer-bottom {
+            text-align: center;
+        }
+
+        .footer-bottom p {
+            font-size: 13px;
+            margin-bottom: 8px;
+            opacity: 0.8;
+        }
+
+        .footer-identity {
+            color: var(--color-secondary);
+            font-weight: 600;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .content {
+                padding: var(--spacing-xl) 0;
+            }
+
+            .content h2 {
+                font-size: 1.4rem;
+            }
+
+            .page-header {
+                margin-top: 70px;
+                padding: 40px var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <img src="images/logo-amirault.png?v=12" alt="AMIRAULT AVOCATS" class="nav-logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">Accueil</a></li>
+                <li><a href="/#quisommesnous" class="nav-link">Qui sommes-nous ?</a></li>
+                <li><a href="/#expertises" class="nav-link">Expertises</a></li>
+                <li><a href="/#honoraires" class="nav-link">Honoraires</a></li>
+                <li><a href="/#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Mentions légales</h1>
+            <p>Cabinet d'avocats AMIRAULT AVOCATS</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content">
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3>📋 Sommaire</h3>
+                <ul>
+                    <li><a href="#editeur">1. Éditeur du site</a></li>
+                    <li><a href="#hebergeur">2. Hébergeur du site</a></li>
+                    <li><a href="#donnees">3. Protection des données personnelles</a></li>
+                    <li><a href="#propriete">4. Propriété intellectuelle</a></li>
+                    <li><a href="#limitation">5. Limitation de responsabilité</a></li>
+                    <li><a href="#liens">6. Liens externes</a></li>
+                    <li><a href="#loi">7. Loi applicable</a></li>
+                    <li><a href="#deontologie">8. Conformité légale</a></li>
+                    <li><a href="#accessibilite">9. Accessibilité</a></li>
+                </ul>
+            </div>
+
+            <!-- Éditeur -->
+            <h2 id="editeur">1. Éditeur du site</h2>
+            <div class="info-box">
+                <p><strong>Dénomination commerciale :</strong> AMIRAULT AVOCATS</p>
+                <p><strong>Statut :</strong> Entreprise Individuelle (EI)</p>
+                <p><strong>Dirigeant :</strong> Amélie Amirault</p>
+                <p><strong>Numéro SIRET :</strong> 10955063200011</p>
+                <p><strong>Numéro SIREN :</strong> 109550632</p>
+                <p><strong>Barreau :</strong> Barreau de Martinique</p>
+                <p><strong>Adresse :</strong> 10 rue de la retraite, Redoute, 97200 Fort-de-France, Martinique</p>
+                <p><strong>Téléphone :</strong> 06 59 91 63 09</p>
+                <p><strong>Email :</strong> contact@amiraultavocats.fr</p>
+            </div>
+
+            <!-- Hébergeur -->
+            <h2 id="hebergeur">2. Hébergeur du site</h2>
+            <p>Le site est hébergé par <strong>Netlify</strong>, une plateforme de déploiement et d'hébergement cloud.</p>
+            <div class="info-box">
+                <p><strong>Netlify, Inc.</strong></p>
+                <p>2325 3rd Street, Suite 215</p>
+                <p>San Francisco, CA 94107, États-Unis</p>
+                <p><strong>Site :</strong> <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">www.netlify.com</a></p>
+            </div>
+
+            <!-- Protection des données -->
+            <h2 id="donnees">3. Protection des données personnelles</h2>
+            <p>
+                Conformément à la <strong>Loi Informatique et Libertés</strong> du 6 janvier 1978 modifiée et au <strong>Règlement Général sur la Protection des Données (RGPD)</strong> du 27 avril 2016, les données à caractère personnel collectées sur ce site sont traitées de manière conforme à ces dispositions.
+            </p>
+
+            <h3 style="font-size: 1.2rem; margin-top: 25px; margin-bottom: 15px; color: var(--color-primary);">Données collectées</h3>
+            <p>
+                Lors de votre utilisation du formulaire de contact, nous collectons les informations suivantes :
+            </p>
+            <ul>
+                <li>Nom complet</li>
+                <li>Adresse email</li>
+                <li>Numéro de téléphone (optionnel)</li>
+                <li>Objet de la demande</li>
+                <li>Message</li>
+            </ul>
+
+            <h3 style="font-size: 1.2rem; margin-top: 25px; margin-bottom: 15px; color: var(--color-primary);">Finalité du traitement</h3>
+            <p>
+                Ces données sont utilisées exclusivement pour :
+            </p>
+            <ul>
+                <li>Traiter votre demande de contact</li>
+                <li>Vous répondre dans les meilleurs délais</li>
+                <li>Vous proposer nos services</li>
+            </ul>
+
+            <h3 style="font-size: 1.2rem; margin-top: 25px; margin-bottom: 15px; color: var(--color-primary);">Partage des données</h3>
+            <p>
+                Vos données ne seront jamais communiquées à des tiers sans votre consentement explicite.
+            </p>
+
+            <h3 style="font-size: 1.2rem; margin-top: 25px; margin-bottom: 15px; color: var(--color-primary);">Durée de conservation</h3>
+            <p>
+                Les données personnelles sont conservées pendant la durée nécessaire au traitement de votre demande. Après résolution de votre demande, elles sont supprimées selon nos politiques de rétention (maximum 3 ans).
+            </p>
+
+            <h3 style="font-size: 1.2rem; margin-top: 25px; margin-bottom: 15px; color: var(--color-primary);">Vos droits</h3>
+            <p>
+                Vous disposez des droits suivants concernant vos données personnelles :
+            </p>
+            <ul>
+                <li><strong>Droit d'accès :</strong> Obtenir la confirmation que vos données sont traitées</li>
+                <li><strong>Droit de rectification :</strong> Corriger ou mettre à jour vos données</li>
+                <li><strong>Droit à l'oubli :</strong> Demander la suppression de vos données</li>
+                <li><strong>Droit à la limitation du traitement :</strong> Restreindre le traitement</li>
+                <li><strong>Droit à la portabilité :</strong> Recevoir vos données dans un format structuré</li>
+                <li><strong>Droit d'opposition :</strong> Vous opposer au traitement</li>
+            </ul>
+
+            <p style="margin-top: 15px;">
+                Pour exercer ces droits, veuillez nous contacter à : <strong>contact@amiraultavocats.fr</strong>
+            </p>
+
+            <!-- Propriété intellectuelle -->
+            <h2 id="propriete">4. Propriété intellectuelle</h2>
+            <p>
+                L'ensemble du contenu présent sur ce site (textes, images, logos, graphismes, mise en page, code source) est la propriété exclusive de <strong>AMIRAULT AVOCATS</strong> et est protégé par les lois relatives à la propriété intellectuelle.
+            </p>
+            <p>
+                Toute reproduction, représentation, modification, publication ou exploitation du contenu sans autorisation expresse est strictement interdite et constitue une contrefaçon passible de poursuites judiciaires.
+            </p>
+
+            <!-- Limitation de responsabilité -->
+            <h2 id="limitation">5. Limitation de responsabilité</h2>
+            <p>
+                <strong>AMIRAULT AVOCATS</strong> s'efforce de maintenir le site en bon état de fonctionnement et de mettre à jour régulièrement le contenu. Cependant, la société décline toute responsabilité pour les éléments suivants :
+            </p>
+            <ul>
+                <li>Interruptions ou dysfonctionnements du site</li>
+                <li>Erreurs, inexactitudes ou omissions dans le contenu</li>
+                <li>Dommages directs ou indirects résultant de l'utilisation du site</li>
+                <li>Pertes de données ou d'exploitation</li>
+                <li>Présence de virus ou logiciels malveillants</li>
+                <li>Problèmes d'accès ou de navigation</li>
+            </ul>
+            <p>
+                Les informations fournies sur ce site sont à titre informatif et ne constituent pas un avis juridique. Pour toute question spécifique, veuillez nous contacter directement.
+            </p>
+
+            <!-- Liens externes -->
+            <h2 id="liens">6. Liens externes</h2>
+            <p>
+                Le site peut contenir des liens vers des sites externes. <strong>AMIRAULT AVOCATS</strong> n'est pas responsable du contenu de ces sites externes et ne les cautionne pas nécessairement. L'accès à ces sites externes s'effectue aux risques et périls de l'utilisateur.
+            </p>
+
+            <!-- Loi applicable -->
+            <h2 id="loi">7. Loi applicable et juridiction compétente</h2>
+            <p>
+                Ce site et l'ensemble de son contenu sont régis par la loi française. Tout litige relatif à la création, l'utilisation ou l'interprétation de ce site sera soumis à la juridiction exclusive des tribunaux compétents de Fort-de-France, Martinique, France.
+            </p>
+
+            <!-- Conformité légale et déontologie -->
+            <h2 id="deontologie">8. Conformité légale et déontologie</h2>
+            <p>
+                <strong>AMIRAULT AVOCATS</strong> exerce sous le contrôle et la tutelle du <strong>Barreau de Martinique</strong> et respecte strictement :
+            </p>
+            <ul>
+                <li>La Loi n° 71-1130 du 31 décembre 1971 portant réforme de certaines professions judiciaires et juridiques</li>
+                <li>Le Décret n° 91-1197 du 27 novembre 1991 (régime disciplinaire et procédure)</li>
+                <li>Le Code de déontologie des avocats</li>
+                <li>Les obligations de secret professionnel</li>
+                <li>Les obligations de formation professionnelle continue</li>
+                <li>Les règles relatives à la responsabilité civile et pénale</li>
+            </ul>
+
+            <!-- Accessibilité -->
+            <h2 id="accessibilite">9. Accessibilité</h2>
+            <p>
+                <strong>AMIRAULT AVOCATS</strong> s'engage à améliorer l'accessibilité de ce site pour tous les utilisateurs, y compris ceux en situation de handicap. Nous avons mis en œuvre les bonnes pratiques de l'accessibilité web.
+            </p>
+            <p>
+                Si vous rencontrez des difficultés pour accéder à une partie du site, nous vous prions de nous contacter à : <strong>contact@amiraultavocats.fr</strong> afin que nous trouvions une solution.
+            </p>
+
+            <!-- Mise à jour -->
+            <div class="info-box" style="margin-top: 40px; background-color: #fff3cd; border-left-color: #ffc107;">
+                <p style="margin-bottom: 0;">
+                    <strong>ℹ️ Dernière mise à jour :</strong> 14 septembre 2026
+                </p>
+                <p style="margin-top: 10px; font-size: 0.9rem; opacity: 0.9;">
+                    Ces mentions légales peuvent être modifiées à tout moment. Consultez cette page régulièrement pour les dernières mises à jour.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wrapper">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="/#quisommesnous">Qui sommes-nous ?</a></li>
+                        <li><a href="/#expertises">Expertises</a></li>
+                        <li><a href="/#honoraires">Honoraires</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Expertises</h3>
+                    <ul>
+                        <li>Droit du travail</li>
+                        <li>Licenciement</li>
+                        <li>Ruptures</li>
+                        <li>Harcèlement</li>
+                        <li>Contentieux prud'homal</li>
+                        <li>Droit de la Sécurité Sociale</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>10 rue de la retraite, Redoute<br>97200 Fort-de-France</li>
+                        <li><a href="tel:+33659916309">06 59 91 63 09</a></li>
+                        <li><a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AMIRAULT AVOCATS. Tous droits réservés.</p>
+                <p>Barreau de Martinique | N° SIRET 10955063200011 | <a href="/mentions-legales.html">Mentions légales</a></p>
+                <p class="footer-identity">
+                    <strong>Amélie Amirault Avocat EI</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
