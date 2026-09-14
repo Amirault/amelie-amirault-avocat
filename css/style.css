@@ -1355,7 +1355,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 .footer-social {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: var(--spacing-sm);
 }
 
