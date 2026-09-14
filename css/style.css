@@ -539,10 +539,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     .hero-motto {
         top: 100px;
         left: var(--spacing-md);
-        max-width: 120px;
-        font-size: 0.62rem;
-        letter-spacing: 0.05em;
-        white-space: normal;
+        max-width: none;
+        font-size: 0.55rem;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
     }
 
     .hero {
@@ -1559,9 +1559,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     .hero-motto {
         top: 90px;
         left: var(--spacing-sm);
-        max-width: 105px;
-        font-size: 0.58rem;
-        white-space: normal;
+        max-width: none;
+        font-size: 0.5rem;
+        letter-spacing: 0.02em;
+        white-space: nowrap;
     }
 
     .hero-logo {
