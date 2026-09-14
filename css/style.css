@@ -383,11 +383,14 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .hero-logo-title {
+    position: relative;
+    left: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100vw;
-    margin: 0 0 var(--spacing-lg) calc(50% - 50vw);
-    transform: translateX(clamp(18px, 3.5vw, 48px));
+    margin: 0 0 var(--spacing-lg);
+    padding-right: clamp(var(--spacing-md), 8vw, var(--spacing-3xl));
+    transform: translateX(-50%);
 }
 
 .hero-logo {
