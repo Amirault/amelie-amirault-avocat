@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1034 778" role="img" aria-labelledby="logo-title logo-desc">
   <title id="logo-title">AMIRAULT AVOCATS</title>
-  <desc id="logo-desc">Monogramme AA et lettrage bleu marine, redessinés en droites et courbes de Bézier sur fond transparent.</desc>
+  <desc id="logo-desc">Monogramme AA bicolore bleu marine et doré, redessinés en droites et courbes de Bézier sur fond transparent.</desc>
   <!-- Monogramme : contours dessinés directement, sans conversion de pixels. -->
   <g fill="#1a2634">
     <path d="M496 9 L563 177 L548 222 L482 61 L347 415 C333 456 343 472 381 475 L275 475 C308 472 321 455 335 420 Z"/>
-    <path d="M583 150 L711 453 C717 468 727 474 741 475 L685 475 L571 195 L484 429 C473 459 480 472 509 475 L432 475 C453 471 465 458 475 431 Z"/>
+    <path fill="#dcc38c" d="M583 150 L711 453 C717 468 727 474 741 475 L685 475 L571 195 L484 429 C473 459 480 472 509 475 L432 475 C453 471 465 458 475 431 Z"/>
     <path d="M383 313 C424 252 550 291 686 460 L700 475 L681 475 C551 313 438 259 389 309 Z"/>
   </g>
   <!-- AMIRAULT : empattements, hampes droites et courbes continues. -->
@@ -19,7 +19,7 @@
     <path d="M940 573 H1022 L1025 587 C1019 578 1013 575 1003 575 H985 V655 C985 663 987 665 995 667 H968 C976 665 977 663 977 655 V575 H959 C949 575 943 578 937 587 Z"/>
   </g>
   <!-- AVOCATS et filets : traits réguliers, courbes lisses, aucune texture. -->
-  <g fill="none" stroke="#1a2634" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+  <g fill="none" stroke="#dcc38c" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
     <path d="M284 762 L301 721 L318 762 M290 748 H312"/>
     <path d="M354 721 L372 762 L390 721"/>
     <ellipse cx="451" cy="742" rx="19" ry="21"/>
@@ -28,7 +28,7 @@
     <path d="M663 721 H695 M679 721 V762"/>
     <path d="M757 725 C751 720 739 719 735 726 C725 742 762 741 757 755 C754 765 739 764 733 758"/>
   </g>
-  <g fill="none" stroke="#1a2634" stroke-width="3">
+  <g fill="none" stroke="#dcc38c" stroke-width="3">
     <path d="M65 742 H225 M806 742 H969"/>
   </g>
 </svg>
