@@ -28,7 +28,7 @@ function initNavbar() {
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Check initial state
+    handleScroll();
 }
 
 /**
@@ -50,12 +50,10 @@ function initMobileMenu() {
         setMenuState(!navMenu.classList.contains('active'));
     });
 
-    // Fermer le menu au clic sur un lien
     navLinks.forEach(link => {
         link.addEventListener('click', () => setMenuState(false));
     });
 
-    // Fermer avec Escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && navMenu.classList.contains('active')) {
             setMenuState(false);
@@ -125,32 +123,47 @@ function initContactForm() {
     
     if (!form) return;
 
+    const isEnglish = document.documentElement.lang === 'en';
+    const messages = isEnglish ? {
+        required: 'Please fill in all required fields.',
+        email: 'Please enter a valid email address.',
+        consent: 'Please accept the confidentiality policy.',
+        sending: 'Sending...',
+        success: 'Thank you for your message. We will get back to you shortly.',
+        error: 'An error occurred. Please try again or contact us by phone.'
+    } : {
+        required: 'Veuillez remplir tous les champs obligatoires.',
+        email: 'Veuillez entrer une adresse email valide.',
+        consent: 'Veuillez accepter la politique de confidentialité.',
+        sending: 'Envoi en cours...',
+        success: 'Merci pour votre message ! Nous vous recontacterons dans les plus brefs délais.',
+        error: 'Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.'
+    };
+
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         
-        // Récupération des données
         const formData = new FormData(form);
         const data = Object.fromEntries(formData);
         
-        // Validation simple
         if (!data.name || !data.email || !data.subject || !data.message) {
-            showFormMessage('Veuillez remplir tous les champs obligatoires.', 'error');
+            showFormMessage(messages.required, 'error');
             return;
         }
 
         if (!isValidEmail(data.email)) {
-            showFormMessage('Veuillez entrer une adresse email valide.', 'error');
+            showFormMessage(messages.email, 'error');
             return;
         }
 
         if (!data.consent) {
-            showFormMessage('Veuillez accepter la politique de confidentialité.', 'error');
+            showFormMessage(messages.consent, 'error');
             return;
         }
 
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Envoi en cours...';
+        submitBtn.textContent = messages.sending;
         submitBtn.disabled = true;
 
         fetch('/', {
@@ -159,11 +172,11 @@ function initContactForm() {
             body: new URLSearchParams(new FormData(form)).toString(),
         })
             .then(() => {
-                showFormMessage('Merci pour votre message ! Nous vous recontacterons dans les plus brefs délais.', 'success');
+                showFormMessage(messages.success, 'success');
                 form.reset();
             })
             .catch(() => {
-                showFormMessage('Une erreur est survenue. Veuillez réessayer ou nous contacter par téléphone.', 'error');
+                showFormMessage(messages.error, 'error');
             })
             .finally(() => {
                 submitBtn.textContent = originalText;
@@ -172,29 +185,20 @@ function initContactForm() {
     });
 }
 
-/**
- * Validation email
- */
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
 
-/**
- * Afficher un message de formulaire
- */
 function showFormMessage(message, type) {
-    // Supprimer les anciens messages
     const oldMessage = document.querySelector('.form-message');
     if (oldMessage) oldMessage.remove();
 
-    // Créer le nouveau message
     const messageEl = document.createElement('div');
     messageEl.className = `form-message form-message-${type}`;
     messageEl.setAttribute('role', 'alert');
     messageEl.textContent = message;
     
-    // Styles inline pour le message
     messageEl.style.cssText = `
         padding: 1rem;
         margin-bottom: 1rem;
@@ -207,7 +211,6 @@ function showFormMessage(message, type) {
     const form = document.getElementById('contact-form');
     form.insertBefore(messageEl, form.firstChild);
 
-    // Auto-suppression après 5 secondes
     setTimeout(() => {
         messageEl.style.opacity = '0';
         messageEl.style.transition = 'opacity 0.3s ease';
@@ -226,12 +229,15 @@ function initReviewsCarousel() {
 
     if (!track) return;
 
-    fetch('/content/reviews.json?v=7')
+    fetch('/content/reviews.json?v=8')
         .then(res => res.json())
         .then(data => {
             const reviews = data.reviews;
             if (!reviews || reviews.length === 0) return;
 
+            const isEnglish = document.documentElement.lang === 'en';
+            const reviewLabel = isEnglish ? 'Review' : 'Avis';
+            const reviewSource = isEnglish ? 'Google review' : 'Avis Google';
             let current = 0;
             let autoPlayTimer;
 
@@ -244,23 +250,22 @@ function initReviewsCarousel() {
                 }).join('');
             }
 
-            // Construire les slides
             reviews.forEach((review, idx) => {
                 const slide = document.createElement('div');
                 slide.className = 'review-slide' + (idx === 0 ? ' active' : '');
+                const reviewText = isEnglish ? (review.text_en || review.text) : review.text;
                 slide.innerHTML = `
                     <div class="review-stars">${renderStars(review.rating)}</div>
-                    <p class="review-text">&laquo;&nbsp;${review.text}&nbsp;&raquo;</p>
+                    <p class="review-text">&laquo;&nbsp;${reviewText}&nbsp;&raquo;</p>
                     <div class="review-meta">
                         <span class="review-author">${review.author}</span>
-                        <span class="review-source">Avis Google</span>
+                        <span class="review-source">${reviewSource}</span>
                     </div>`;
                 track.appendChild(slide);
 
-                // Dot
                 const dot = document.createElement('button');
                 dot.className = 'reviews-dot' + (idx === 0 ? ' active' : '');
-                dot.setAttribute('aria-label', `Avis ${idx + 1}`);
+                dot.setAttribute('aria-label', `${reviewLabel} ${idx + 1}`);
                 dot.addEventListener('click', () => goTo(idx));
                 dotsContainer.appendChild(dot);
             });
@@ -284,10 +289,8 @@ function initReviewsCarousel() {
 
             prevBtn.addEventListener('click', () => goTo(current - 1));
             nextBtn.addEventListener('click', () => goTo(current + 1));
-
             resetAutoPlay();
 
-            // Pause au survol
             track.closest('.reviews-carousel').addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
             track.closest('.reviews-carousel').addEventListener('mouseleave', resetAutoPlay);
         })
