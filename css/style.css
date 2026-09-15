@@ -1177,17 +1177,14 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .legal-page-brand {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 1.05;
-    color: var(--color-white);
+    display: inline-flex;
+    align-items: center;
 }
 
-.legal-page-brand span {
+.legal-page-logo {
     display: block;
-    margin-top: var(--spacing-xs);
-    color: var(--color-secondary);
+    width: 140px;
+    height: auto;
 }
 
 .legal-page-back {
@@ -1523,6 +1520,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     }
 
     .footer-brand-header {
+        justify-content: center;
+    }
+
+    .footer-social {
         justify-content: center;
     }
     
