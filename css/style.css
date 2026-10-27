@@ -237,11 +237,11 @@ ul {
 }
 
 /* On homepage (has hero), show white logo initially, hide dark */
-body:has(.hero) .nav-logo-img-light {
+body:has(.hero:not(.hero-light)) .nav-logo-img-light {
     display: block;
 }
 
-body:has(.hero) .nav-logo-img-dark {
+body:has(.hero:not(.hero-light)) .nav-logo-img-dark {
     display: none;
 }
 
@@ -355,7 +355,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     min-height: 100vh;
     min-height: 100svh; /* iOS Safari : exclut la barre d'adresse */
     display: block;
-    background: linear-gradient(135deg, #1a2634 0%, #0f1a24 50%, #1a2634 100%);
+    background: var(--color-white);
     overflow: hidden;
     padding-top: 100px;
 }
@@ -383,6 +383,43 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a961' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     z-index: 2;
     pointer-events: none;
+}
+
+/* Variante claire de la première page */
+.hero-light::before,
+.hero-light::after {
+    display: none;
+}
+
+body:has(.hero-light) .logo-text {
+    color: var(--color-primary);
+}
+
+body:has(.hero-light) .nav-link {
+    color: var(--color-gray-700);
+}
+
+body:has(.hero-light) .nav-toggle span {
+    background-color: var(--color-primary);
+}
+
+body:has(.hero-light) .hero-title,
+body:has(.hero-light) .hero-tagline {
+    color: var(--color-primary);
+}
+
+body:has(.hero-light) .hero-cta .btn-secondary {
+    color: var(--color-primary);
+    border-color: rgba(26, 38, 52, 0.35);
+}
+
+body:has(.hero-light) .hero-cta .btn-secondary:hover {
+    background-color: rgba(26, 38, 52, 0.08);
+    border-color: var(--color-primary);
+}
+
+body:has(.hero-light) .hero-scroll span {
+    color: rgba(26, 38, 52, 0.5);
 }
 
 .hero-logo-title {
