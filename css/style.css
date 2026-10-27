@@ -753,49 +753,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     color: var(--color-white);
 }
 
-.reviews-text-summary {
-    margin-top: var(--spacing-lg);
-    padding-top: var(--spacing-md);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.82);
-}
-
-.reviews-text-summary summary {
-    color: var(--color-secondary);
-    cursor: pointer;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
-
-.reviews-text-summary ul {
-    display: grid;
-    gap: var(--spacing-md);
-    margin-top: var(--spacing-md);
-}
-
-.reviews-text-summary li {
-    padding-left: var(--spacing-sm);
-    border-left: 2px solid rgba(201, 169, 97, 0.65);
-}
-
-.reviews-text-summary blockquote {
-    font-family: var(--font-heading);
-    font-size: 1.05rem;
-    font-style: italic;
-    line-height: 1.5;
-}
-
-.reviews-text-summary cite {
-    display: block;
-    margin-top: 0.35rem;
-    color: var(--color-secondary);
-    font-size: 0.7rem;
-    font-style: normal;
-    letter-spacing: 0.04em;
-}
-
 /* Reviews Carousel */
 .reviews-carousel {
     background-color: transparent;
