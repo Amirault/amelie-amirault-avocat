@@ -303,7 +303,8 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     transition: width var(--transition-normal);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
@@ -315,6 +316,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 .nav-link-cta::after {
     display: none;
+}
+
+.nav-link-cta.active::after {
+    display: block;
 }
 
 .nav-link-cta:hover {

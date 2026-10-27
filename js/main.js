@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     initNavbar();
+    initActiveNavLink();
     initMobileMenu();
     initSmoothScroll();
     initRevealAnimations();
@@ -29,6 +30,61 @@ function initNavbar() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll();
+}
+
+
+/**
+ * Onglet actif selon la section visible
+ */
+function initActiveNavLink() {
+    const navLinks = Array.from(document.querySelectorAll('.nav-link[href^="#"]'));
+    const sections = navLinks
+        .map(link => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+    if (!navLinks.length || !sections.length) return;
+
+    function setActiveLink(sectionId) {
+        navLinks.forEach(link => {
+            const isActive = link.getAttribute('href') === `#${sectionId}`;
+            link.classList.toggle('active', isActive);
+            if (isActive) {
+                link.setAttribute('aria-current', 'location');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        });
+    }
+
+    function updateActiveLink() {
+        const navbar = document.getElementById('navbar');
+        const offset = (navbar ? navbar.offsetHeight : 0) + 80;
+        const scrollPosition = window.scrollY + offset;
+        let activeSection = sections[0];
+
+        sections.forEach(section => {
+            if (section.offsetTop <= scrollPosition) {
+                activeSection = section;
+            }
+        });
+
+        if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+            activeSection = sections[sections.length - 1];
+        }
+
+        setActiveLink(activeSection.id);
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            const sectionId = link.getAttribute('href').slice(1);
+            setActiveLink(sectionId);
+        });
+    });
+
+    window.addEventListener('scroll', updateActiveLink, { passive: true });
+    window.addEventListener('resize', updateActiveLink);
+    updateActiveLink();
 }
 
 /**
