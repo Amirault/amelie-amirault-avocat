@@ -1077,7 +1077,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 .appointment-image {
     position: relative;
-    width: min(100%, 180px);
+    width: min(100%, 120px);
     aspect-ratio: 1 / 1;
     margin: 0 auto var(--spacing-lg);
     overflow: hidden;
