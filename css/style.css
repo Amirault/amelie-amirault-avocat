@@ -1524,7 +1524,8 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     color: var(--color-white);
 }
 
-.footer-bar-link {
+.footer-bar-link,
+.footer-directory-link {
     border: 1px solid rgba(201, 169, 97, 0.35);
 }
 
