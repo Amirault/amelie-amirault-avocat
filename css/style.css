@@ -1125,6 +1125,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .appointment-section .section-label {
+    font-size: 1.25rem;
     color: var(--color-secondary);
 }
 
