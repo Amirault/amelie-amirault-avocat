@@ -1029,6 +1029,23 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     background-color: var(--color-light);
 }
 
+.contact-header {
+    max-width: 860px;
+    margin: 0 auto var(--spacing-2xl);
+    text-align: center;
+}
+
+.contact-header > p {
+    max-width: 620px;
+    margin: 0 auto var(--spacing-lg);
+    color: var(--color-gray-600);
+}
+
+.contact-header .appointment-options {
+    margin-bottom: 0;
+    text-align: left;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -1147,6 +1164,15 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     background-color: var(--color-white);
     padding: var(--spacing-xl);
     box-shadow: var(--shadow-lg);
+}
+
+.contact-form-title {
+    margin-bottom: var(--spacing-lg);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-primary);
 }
 
 .contact-form {
