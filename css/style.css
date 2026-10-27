@@ -1040,6 +1040,65 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     color: var(--color-gray-600);
 }
 
+.appointment-options {
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    border-left: 3px solid var(--color-secondary);
+    box-shadow: var(--shadow-sm);
+}
+
+.appointment-label {
+    display: block;
+    margin-bottom: var(--spacing-xs);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #7a6020;
+}
+
+.appointment-options h3 {
+    margin-bottom: var(--spacing-xs);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-primary);
+}
+
+.appointment-options p {
+    margin-bottom: var(--spacing-md);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.appointment-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.appointment-links .btn {
+    flex: 1 1 190px;
+    padding: 0.85rem 1rem;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
 .contact-details {
     display: flex;
     flex-direction: column;
@@ -1601,7 +1660,8 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .footer-links a:focus-visible,
-.contact-text a:focus-visible {
+.contact-text a:focus-visible,
+.appointment-links a:focus-visible {
     outline: 2px solid var(--color-secondary);
     outline-offset: 2px;
 }
