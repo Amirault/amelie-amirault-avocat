@@ -237,11 +237,11 @@ ul {
 }
 
 /* On homepage (has hero), show white logo initially, hide dark */
-body:has(.hero) .nav-logo-img-light {
+body:has(.hero:not(.hero-light)) .nav-logo-img-light {
     display: block;
 }
 
-body:has(.hero) .nav-logo-img-dark {
+body:has(.hero:not(.hero-light)) .nav-logo-img-dark {
     display: none;
 }
 
@@ -355,7 +355,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     min-height: 100vh;
     min-height: 100svh; /* iOS Safari : exclut la barre d'adresse */
     display: block;
-    background: linear-gradient(135deg, #1a2634 0%, #0f1a24 50%, #1a2634 100%);
+    background: var(--color-white);
     overflow: hidden;
     padding-top: 100px;
 }
@@ -385,34 +385,41 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     pointer-events: none;
 }
 
-/* Bandeau ivoire central du hero */
-.hero-center-band {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    height: clamp(30rem, 66vh, 42rem);
-    transform: translateY(-50%);
-    background-color: rgba(248, 245, 237, 0.94);
-    border-top: 1px solid rgba(201, 169, 97, 0.3);
-    border-bottom: 1px solid rgba(201, 169, 97, 0.22);
-    box-shadow: 0 12px 35px rgba(15, 20, 25, 0.12);
-    z-index: 3;
-    pointer-events: none;
+/* Variante claire de la première page */
+.hero-light::before,
+.hero-light::after {
+    display: none;
 }
 
-body:has(.hero-center-band) .hero-tagline {
+body:has(.hero-light) .logo-text {
     color: var(--color-primary);
 }
 
-body:has(.hero-center-band) .hero-cta .btn-secondary {
+body:has(.hero-light) .nav-link {
+    color: var(--color-gray-700);
+}
+
+body:has(.hero-light) .nav-toggle span {
+    background-color: var(--color-primary);
+}
+
+body:has(.hero-light) .hero-title,
+body:has(.hero-light) .hero-tagline {
+    color: var(--color-primary);
+}
+
+body:has(.hero-light) .hero-cta .btn-secondary {
     color: var(--color-primary);
     border-color: rgba(26, 38, 52, 0.35);
 }
 
-body:has(.hero-center-band) .hero-cta .btn-secondary:hover {
+body:has(.hero-light) .hero-cta .btn-secondary:hover {
     background-color: rgba(26, 38, 52, 0.08);
     border-color: var(--color-primary);
+}
+
+body:has(.hero-light) .hero-scroll span {
+    color: rgba(26, 38, 52, 0.5);
 }
 
 .hero-logo-title {
