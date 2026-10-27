@@ -1383,6 +1383,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     color: var(--color-white);
 }
 
+.footer-bar-link {
+    border: 1px solid rgba(201, 169, 97, 0.35);
+}
+
 .footer-social-link svg {
     width: 18px;
     height: 18px;
