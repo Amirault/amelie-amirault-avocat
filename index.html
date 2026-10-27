@@ -587,20 +587,29 @@
     <!-- Contact -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="contact-header">
+            <div class="appointment-section">
                 <span class="section-label">Rendez-vous</span>
                 <h2 class="section-title">Prenons<br>rendez-vous</h2>
                 <p>Choisissez le format de consultation qui vous convient et réservez directement votre créneau en ligne.</p>
                 <div class="appointment-options">
-                    <span class="appointment-label">Prendre rendez-vous en ligne</span>
-                    <h3>Choisissez votre mode de consultation</h3>
-                    <p>Réservez directement votre rendez-vous au cabinet ou par téléphone.</p>
+                    <div class="appointment-intro">
+                        <span class="appointment-label">Réserver en ligne</span>
+                        <h3>Choisissez votre mode de consultation</h3>
+                        <p>Cliquez sur l’option de votre choix pour accéder au formulaire de réservation.</p>
+                    </div>
                     <div class="appointment-links">
-                        <a class="btn btn-primary" href="https://consultation.avocat.fr/consultation-cabinet/forms.php?source=widget&amp;targetid=61526" target="_blank" rel="noopener noreferrer">Consultation au cabinet</a>
-                        <a class="btn btn-outline" href="https://consultation.avocat.fr/consultation-telephonique/forms.php?source=widget&amp;targetid=61526" target="_blank" rel="noopener noreferrer">Consultation téléphonique</a>
+                        <a class="appointment-link" href="https://consultation.avocat.fr/consultation-cabinet/forms.php?source=widget&amp;targetid=61526" target="_blank" rel="noopener noreferrer" aria-label="Réserver une consultation au cabinet">
+                            <span class="appointment-link-title">Consultation au cabinet</span>
+                            <span class="appointment-link-action">Réserver ce rendez-vous <span aria-hidden="true">→</span></span>
+                        </a>
+                        <a class="appointment-link" href="https://consultation.avocat.fr/consultation-telephonique/forms.php?source=widget&amp;targetid=61526" target="_blank" rel="noopener noreferrer" aria-label="Réserver une consultation téléphonique">
+                            <span class="appointment-link-title">Consultation téléphonique</span>
+                            <span class="appointment-link-action">Réserver ce rendez-vous <span aria-hidden="true">→</span></span>
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="contact-section-divider" aria-hidden="true"></div>
             <div class="contact-grid">
                 <div class="contact-info">
                     <span class="section-label">Contact</span>
