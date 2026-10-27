@@ -104,9 +104,9 @@ Les contributions sont bienvenues ! Pour contribuer :
 
 **AMIRAULT AVOCATS**
 - 📱 Téléphone : 06 59 91 63 09
-- 📧 Email : contact@amelie-amirault-avocat.fr
+- 📧 Email : contact@amiraultavocats.fr
 - 📍 Fort-de-France, Martinique
-- 🌐 Website : https://amelie-amirault-avocat.fr
+- 🌐 Website : https://amiraultavocats.fr
 
 ## 🧪 Validation de pull request
 

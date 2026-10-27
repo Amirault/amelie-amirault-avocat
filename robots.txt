@@ -1,11 +1,11 @@
-# Robots.txt for amelie-amirault-avocat.fr
+# Robots.txt for amiraultavocats.fr
 # Allow search engines to crawl the public site while excluding build dependencies.
 
 User-agent: *
 Allow: /
 Disallow: /node_modules/
 
-Sitemap: https://amelie-amirault-avocat.fr/sitemap.xml
+Sitemap: https://amiraultavocats.fr/sitemap.xml
 
 # AI crawlers
 User-agent: GPTBot
