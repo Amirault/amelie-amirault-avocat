@@ -751,6 +751,20 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     font-size: 1.1rem;
 }
 
+.reviews-google-link {
+    display: inline-block;
+    color: var(--color-secondary);
+    font-size: 0.72rem;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.reviews-google-link:hover {
+    color: var(--color-white);
+}
+
 /* Reviews Carousel */
 .reviews-carousel {
     background-color: transparent;
@@ -1798,6 +1812,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
    =================================== */
 .btn:focus-visible,
 .reviews-btn:focus-visible,
+.reviews-google-link:focus-visible,
 .nav-toggle:focus-visible,
 .reviews-dot:focus-visible {
     outline: 2px solid var(--color-secondary);
