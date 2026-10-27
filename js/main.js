@@ -229,7 +229,7 @@ function initReviewsCarousel() {
 
     if (!track) return;
 
-    fetch('/content/reviews.json?v=8')
+    fetch('/content/reviews.json?v=9')
         .then(res => res.json())
         .then(data => {
             const reviews = data.reviews;
@@ -298,3 +298,4 @@ function initReviewsCarousel() {
             // Silencieux si le fichier n'est pas accessible (ex: ouverture locale)
         });
 }
+
