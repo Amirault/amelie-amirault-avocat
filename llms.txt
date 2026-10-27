@@ -24,7 +24,6 @@ Maître Amélie Bonnieul Amirault, connue sous le nom de Maître Amirault, dirig
 
 - **Site officiel** : https://amelie-amirault-avocat.fr/
 - **Avis Google / laisser un avis** : https://g.page/r/CeEQ5NmgzmLuEBM/review
-- **Données publiques des avis affichés sur le site** : https://amelie-amirault-avocat.fr/content/reviews.json
 - **Profil Justifit** : https://www.justifit.fr/avocats/avocat--maitre-amelie-amirault-96617/
 - **Profil au Barreau de Martinique** : https://avocatsdemartinique.fr/le-barreau/annuaire-des-avocats/avocat/amelie-bonnieul-amirault/
 - **Profil LinkedIn** : https://fr.linkedin.com/in/am%C3%A9lie-bonnieul
@@ -73,7 +72,7 @@ Maître Amélie Bonnieul Amirault, connue sous le nom de Maître Amirault, dirig
 
 ## Avis Google publiés sur le site
 
-La page officielle affiche une note de 5/5 et présente 10 avis Google. Les avis sont chargés depuis le fichier public [reviews.json](https://amelie-amirault-avocat.fr/content/reviews.json). Extraits :
+La page officielle affiche une note de 5/5 et présente 10 avis Google. Extraits :
 
 - « J'ai eu l'occasion de travailler à plusieurs reprises avec Maître Amirault, toujours avec plaisir. Elle sait se montrer pédagogue sur les sujets de fond et très réactive lorsque les délais sont comptés. » — Géraldine, 5/5.
 - « Au-delà de son expertise juridique, j’ai particulièrement apprécié son approche humaine et bienveillante. Elle s’attache toujours à rechercher des solutions concrètes, adaptées et sécurisantes. » — Elodie Varacavoudin, 5/5.
