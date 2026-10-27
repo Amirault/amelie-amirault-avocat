@@ -1,15 +1,34 @@
 [build]
   publish = "."
 
+# Consolidate all legacy and www hostnames on the official naked domain.
 [[redirects]]
-  from = "https://amirault-avocat.fr/*"
-  to = "https://www.amiraultavocats.fr/:splat"
+  from = "https://amelie-amirault-avocat.fr/*"
+  to = "https://amiraultavocats.fr/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://amiraultavocat.fr/*"
-  to = "https://www.amiraultavocats.fr/:splat"
+  from = "https://www.amelie-amirault-avocat.fr/*"
+  to = "https://amiraultavocats.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://amirault-avocat.fr/*"
+  to = "https://amiraultavocats.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.amirault-avocat.fr/*"
+  to = "https://amiraultavocats.fr/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.amiraultavocats.fr/*"
+  to = "https://amiraultavocats.fr/:splat"
   status = 301
   force = true
 
