@@ -1284,6 +1284,104 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     color: var(--color-secondary);
 }
 
+.contact-item-link {
+    color: inherit;
+    cursor: pointer;
+}
+
+.contact-item-link:hover .contact-text-heading,
+.contact-item-link:focus-visible .contact-text-heading,
+.contact-item-link:hover .contact-text-content,
+.contact-item-link:focus-visible .contact-text-content {
+    color: var(--color-secondary);
+}
+
+.contact-item-link:focus-visible,
+.contact-item-summary:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 6px;
+}
+
+.contact-item-address {
+    display: block;
+}
+
+.contact-item-summary {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    cursor: pointer;
+    list-style: none;
+}
+
+.contact-item-summary::-webkit-details-marker {
+    display: none;
+}
+
+.contact-item-summary::after {
+    content: '+';
+    flex-shrink: 0;
+    margin: 0.1rem 0 0 auto;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.contact-item-address[open] .contact-item-summary::after {
+    content: '×';
+}
+
+.contact-text-heading,
+.contact-text-content,
+.contact-action {
+    display: block;
+}
+
+.contact-text-heading {
+    margin-bottom: 4px;
+    color: var(--color-primary);
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.contact-text-content {
+    color: var(--color-gray-700);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.contact-action {
+    margin-top: 0.35rem;
+    color: #7a6020;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.map-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: var(--spacing-sm) 0 0 66px;
+}
+
+.map-links a {
+    padding: 0.55rem 0.8rem;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    transition: all var(--transition-fast);
+}
+
+.map-links a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
 .contact-form-wrapper {
     background-color: var(--color-white);
     padding: var(--spacing-xl);
