@@ -1,6 +1,48 @@
 {
   "reviews": [
     {
+      "author": "Géraldine",
+      "rating": 5,
+      "text": "J'ai eu l'occasion de travailler à plusieurs reprises avec Maître Amirault, toujours avec plaisir. Elle sait se montrer pédagogue sur les sujets de fond et très réactive lorsque les délais sont comptés. Je recommande vivement ses services. Merci.",
+      "text_en": "I have worked with Ms Amirault several times, always with great pleasure. She is clear and educational on substantive issues, and highly responsive when deadlines are tight. I strongly recommend her services. Thank you.",
+      "date": "4 février 2026"
+    },
+    {
+      "author": "Cynthia BOLINOIS",
+      "rating": 5,
+      "text": "J'ai eu l'occasion de faire appel aux services de Me Amirault en droit social dans le cadre de dossiers complexes. Son expertise, sa rigueur et sa parfaite maîtrise des enjeux juridiques ont été particulièrement appréciables.",
+      "text_en": "I have called on Ms Amirault's employment and social security law services for complex matters. Her expertise, rigour and excellent command of the legal issues were particularly valuable.",
+      "date": "5 février 2026"
+    },
+    {
+      "author": "Khaled ALKHATEEB",
+      "rating": 5,
+      "text": "J'ai sollicité l'aide de Maître Amirault, pour une affaire personnelle. Le cabinet a rédigé un recours efficace qui m'a permis de gagner mon dossier en 2020. Je recommande vivement pour le professionnalisme et l'efficacité.",
+      "text_en": "I sought Ms Amirault's help with a personal matter. The firm drafted an effective appeal that enabled me to win my case in 2020. I highly recommend the firm for its professionalism and efficiency.",
+      "date": "5 février 2026"
+    },
+    {
+      "author": "Elodie Varacavoudin",
+      "rating": 5,
+      "text": "J'ai eu l'opportunité de collaborer avec Me AMIRAULT sur plusieurs dossiers mêlant contentieux et conseil en droit social, et je ne peux que recommander la qualité de son accompagnement.",
+      "text_en": "I had the opportunity to work with Ms Amirault on several matters combining litigation and employment and social security law advice, and I can only recommend the quality of her support.",
+      "date": "7 février 2026"
+    },
+    {
+      "author": "yougourta laradi",
+      "rating": 5,
+      "text": "Je suis très content des services d'Amélie en Avocat du droit du Travail et de notre collaboration. Elle a su prendre en considération le contexte des différentes situations dans des dossiers complexes.",
+      "text_en": "I am very satisfied with Amélie's services as an employment lawyer and with our collaboration. She was able to take the context of the different situations into account in complex matters.",
+      "date": "11 mars 2026"
+    },
+    {
+      "author": "Simon Claudin",
+      "rating": 5,
+      "text": "Je recommande vivement Maître AMIRAULT pour son grand professionnalisme et son accompagnement remarquable. Elle a su prendre en charge notre problématique avec beaucoup de sérieux et d’implication, et a permis de trouver une solution efficace à une situation qui paraissait particulièrement complexe. J’ai particulièrement apprécié sa grande qualité d’écoute, sa disponibilité et sa réactivité. Elle prend le temps de comprendre réellement les enjeux, explique les choses avec clarté et fait preuve d’une véritable implication dans le suivi du dossier. Son expertise en droit social, associée à ses qualités humaines et à son sens du conseil, a été particulièrement précieuse. Un accompagnement à la fois rigoureux, rassurant et efficace. Un grand merci pour son engagement et la qualité de son travail. Je la recommande sans aucune hésitation.",
+      "text_en": "I highly recommend Ms Amirault for her great professionalism and outstanding support. She handled our matter with great seriousness and commitment, and helped find an effective solution to a situation that initially seemed particularly complex. I especially appreciated her excellent listening skills, availability and responsiveness. She takes the time to truly understand the issues, explains matters clearly and shows genuine commitment to following the case through. Her employment and social security law expertise, combined with her human qualities and advisory skills, proved invaluable. A rigorous, reassuring and effective service. Many thanks for her commitment and the quality of her work. I recommend her without hesitation.",
+      "date": "22 septembre 2026"
+    },
+    {
       "author": "Thierry Coat",
       "rating": 5,
       "text": "Vient renforcer le contingent de profils à forte contribution dans nos territoires",
@@ -27,48 +69,6 @@
       "text": "Première matinée de rentrée sociale avec Maître AMIRAULT. J’ai beaucoup apprécié l’approche, la pédagogie et les explications. Elle a répondu à toutes nos questions et je repars avec guide et conseils précieux pour ma fonction de directrice. Merci encore et à bientôt pour la prochaine édition",
       "text_en": "My first back-to-work social law training morning with Ms Amirault. I greatly appreciated her approach, teaching style and explanations. She answered all our questions, and I am leaving with a valuable guide and advice for my role as a director. Thank you again, and see you at the next session.",
       "date": "16 octobre 2026"
-    },
-    {
-      "author": "Simon Claudin",
-      "rating": 5,
-      "text": "Je recommande vivement Maître AMIRAULT pour son grand professionnalisme et son accompagnement remarquable. Elle a su prendre en charge notre problématique avec beaucoup de sérieux et d’implication, et a permis de trouver une solution efficace à une situation qui paraissait particulièrement complexe. J’ai particulièrement apprécié sa grande qualité d’écoute, sa disponibilité et sa réactivité. Elle prend le temps de comprendre réellement les enjeux, explique les choses avec clarté et fait preuve d’une véritable implication dans le suivi du dossier. Son expertise en droit social, associée à ses qualités humaines et à son sens du conseil, a été particulièrement précieuse. Un accompagnement à la fois rigoureux, rassurant et efficace. Un grand merci pour son engagement et la qualité de son travail. Je la recommande sans aucune hésitation.",
-      "text_en": "I highly recommend Ms Amirault for her great professionalism and outstanding support. She handled our matter with great seriousness and commitment, and helped find an effective solution to a situation that initially seemed particularly complex. I especially appreciated her excellent listening skills, availability and responsiveness. She takes the time to truly understand the issues, explains matters clearly and shows genuine commitment to following the case through. Her employment and social security law expertise, combined with her human qualities and advisory skills, proved invaluable. A rigorous, reassuring and effective service. Many thanks for her commitment and the quality of her work. I recommend her without hesitation.",
-      "date": "22 septembre 2026"
-    },
-    {
-      "author": "yougourta laradi",
-      "rating": 5,
-      "text": "Je suis très content des services d'Amélie en Avocat du droit du Travail et de notre collaboration. Elle a su prendre en considération le contexte des différentes situations dans des dossiers complexes.",
-      "text_en": "I am very satisfied with Amélie's services as an employment lawyer and with our collaboration. She was able to take the context of the different situations into account in complex matters.",
-      "date": "11 mars 2026"
-    },
-    {
-      "author": "Elodie Varacavoudin",
-      "rating": 5,
-      "text": "J'ai eu l'opportunité de collaborer avec Me AMIRAULT sur plusieurs dossiers mêlant contentieux et conseil en droit social, et je ne peux que recommander la qualité de son accompagnement.",
-      "text_en": "I had the opportunity to work with Ms Amirault on several matters combining litigation and employment and social security law advice, and I can only recommend the quality of her support.",
-      "date": "7 février 2026"
-    },
-    {
-      "author": "Cynthia BOLINOIS",
-      "rating": 5,
-      "text": "J'ai eu l'occasion de faire appel aux services de Me Amirault en droit social dans le cadre de dossiers complexes. Son expertise, sa rigueur et sa parfaite maîtrise des enjeux juridiques ont été particulièrement appréciables.",
-      "text_en": "I have called on Ms Amirault's employment and social security law services for complex matters. Her expertise, rigour and excellent command of the legal issues were particularly valuable.",
-      "date": "5 février 2026"
-    },
-    {
-      "author": "Khaled ALKHATEEB",
-      "rating": 5,
-      "text": "J'ai sollicité l'aide de Maître Amirault, pour une affaire personnelle. Le cabinet a rédigé un recours efficace qui m'a permis de gagner mon dossier en 2020. Je recommande vivement pour le professionnalisme et l'efficacité.",
-      "text_en": "I sought Ms Amirault's help with a personal matter. The firm drafted an effective appeal that enabled me to win my case in 2020. I highly recommend the firm for its professionalism and efficiency.",
-      "date": "5 février 2026"
-    },
-    {
-      "author": "Géraldine",
-      "rating": 5,
-      "text": "J'ai eu l'occasion de travailler à plusieurs reprises avec Maître Amirault, toujours avec plaisir. Elle sait se montrer pédagogue sur les sujets de fond et très réactive lorsque les délais sont comptés. Je recommande vivement ses services. Merci.",
-      "text_en": "I have worked with Ms Amirault several times, always with great pleasure. She is clear and educational on substantive issues, and highly responsive when deadlines are tight. I strongly recommend her services. Thank you.",
-      "date": "4 février 2026"
     }
   ]
 }
