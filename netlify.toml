@@ -1,7 +1,8 @@
 [build]
   publish = "."
 
-# Consolidate all legacy and www hostnames on the official naked domain.
+# Keep legacy host redirects, but let Netlify's configured primary domain
+# handle the www/naked-domain choice to avoid redirect loops.
 [[redirects]]
   from = "https://amelie-amirault-avocat.fr/*"
   to = "https://amiraultavocats.fr/:splat"
@@ -22,12 +23,6 @@
 
 [[redirects]]
   from = "https://www.amirault-avocat.fr/*"
-  to = "https://amiraultavocats.fr/:splat"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "https://www.amiraultavocats.fr/*"
   to = "https://amiraultavocats.fr/:splat"
   status = 301
   force = true
