@@ -908,11 +908,14 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .articles-section .section-title {
+    display: inline-block;
     color: var(--color-secondary);
     font-family: var(--font-body);
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: 0.2em;
+    line-height: 1.7;
+    margin-bottom: var(--spacing-sm);
     text-transform: uppercase;
 }
 
