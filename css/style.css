@@ -1029,6 +1029,11 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     background-color: var(--color-light);
 }
 
+.appointments {
+    padding: var(--spacing-3xl) 0;
+    background-color: var(--color-white);
+}
+
 .appointment-section {
     max-width: 900px;
     margin: 0 auto;
@@ -1039,12 +1044,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     max-width: 620px;
     margin: 0 auto var(--spacing-lg);
     color: var(--color-gray-600);
-}
-
-.contact-section-divider {
-    max-width: 900px;
-    margin: var(--spacing-2xl) auto;
-    border-top: 1px solid var(--color-gray-200);
 }
 
 .contact-grid {
@@ -1061,16 +1060,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 .appointment-options {
     padding: var(--spacing-lg) 0 0;
     border-top: 1px solid var(--color-gray-200);
-}
-
-.appointment-label {
-    display: block;
-    margin-bottom: var(--spacing-xs);
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: #7a6020;
 }
 
 .appointment-options h3 {
