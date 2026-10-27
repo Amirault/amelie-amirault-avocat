@@ -101,7 +101,7 @@
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
                 "opens": "08:00",
-                "closes": "18:00"
+                "closes": "19:00"
             }
         ],
         "areaServed": [
@@ -259,7 +259,7 @@
                 "name": "How can I contact AMIRAULT AVOCATS?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "You can contact AMIRAULT AVOCATS by phone on 06 59 91 63 09 or by email. The firm is open Monday to Friday, from 8:00 am to 6:00 pm."
+                    "text": "You can contact AMIRAULT AVOCATS by phone on 06 59 91 63 09 or by email. The firm is open Monday to Friday, from 8:00 am to 7:00 pm."
                 }
             },
             {
@@ -651,29 +651,38 @@
                         Please contact us for an initial consultation.
                     </p>
                     <div class="contact-details">
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <details class="contact-item contact-item-address">
+                            <summary class="contact-item-summary">
+                                <span class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </span>
+                                <span class="contact-text">
+                                    <span class="contact-text-heading">Office</span>
+                                    <span class="contact-text-content">10 rue de la retraite<br>Redoute<br>97200 FORT DE FRANCE</span>
+                                    <span class="contact-action">Choose a map app <span aria-hidden="true">↗</span></span>
+                                </span>
+                            </summary>
+                            <div class="map-links" aria-label="Open the office address in a map application">
+                                <a href="https://www.google.com/maps/search/?api=1&query=AMIRAULT+AVOCATS%2C+10+rue+de+la+retraite%2C+97200+Fort-de-France" target="_blank" rel="noopener noreferrer">Google Maps</a>
+                                <a href="https://waze.com/ul?ll=14.6161%2C-61.0588&navigate=yes" target="_blank" rel="noopener noreferrer">Waze</a>
+                                <a href="https://maps.apple.com/?address=10%20rue%20de%20la%20retraite%2C%20Redoute%2C%2097200%20Fort-de-France&ll=14.6161%2C-61.0588&q=AMIRAULT%20AVOCATS" target="_blank" rel="noopener noreferrer">Apple Plans</a>
+                            </div>
+                        </details>
+                        <a class="contact-item contact-item-link" href="tel:+596659916309" aria-label="Call AMIRAULT AVOCATS at 06 59 91 63 09">
+                            <span class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                                    <circle cx="12" cy="10" r="3"/>
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 1 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                                 </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Office</h3>
-                                <p>10 rue de la retraite<br>Redoute<br>97200 FORT DE FRANCE</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                                </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Phone</h3>
-                                <p><a href="tel:+33659916309">06 59 91 63 09</a></p>
-                            </div>
-                        </div>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-text-heading">Phone</span>
+                                <span class="contact-text-content">06 59 91 63 09</span>
+                                <span class="contact-action">Call us <span aria-hidden="true">↗</span></span>
+                            </span>
+                        </a>
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -683,21 +692,22 @@
                             </div>
                             <div class="contact-text">
                                 <h3>Opening hours</h3>
-                                <p>Monday - Friday<br>8:00 am - 6:00 pm</p>
+                                <p>Monday - Friday<br>8:00 am - 7:00 pm</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <div class="contact-icon">
+                        <a class="contact-item contact-item-link" href="mailto:contact@amiraultavocats.fr" aria-label="Email AMIRAULT AVOCATS">
+                            <span class="contact-icon">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                     <polyline points="22,6 12,13 2,6"/>
                                 </svg>
-                            </div>
-                            <div class="contact-text">
-                                <h3>Email</h3>
-                                <p><a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a></p>
-                            </div>
-                        </div>
+                            </span>
+                            <span class="contact-text">
+                                <span class="contact-text-heading">Email</span>
+                                <span class="contact-text-content">contact@amiraultavocats.fr</span>
+                                <span class="contact-action">Send us an email <span aria-hidden="true">↗</span></span>
+                            </span>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
@@ -787,7 +797,7 @@
                 <div class="footer-contact">
                     <h3>Contact</h3>
                     <p>10 rue de la retraite<br>Redoute<br>97200 FORT DE FRANCE</p>
-                    <p><a href="tel:+33****6309">06 59 91 63 09</a></p>
+                    <p><a href="tel:+596659916309">06 59 91 63 09</a></p>
                     <p><a href="mailto:contact@amiraultavocats.fr">contact@amiraultavocats.fr</a></p>
                     <div class="footer-social">
                         <a href="https://fr.linkedin.com/in/am%C3%A9lie-bonnieul" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de AMIRAULT AVOCATS" class="footer-social-link">
