@@ -1527,8 +1527,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .contact-photo-wrapper {
-    display: flex;
-    flex-direction: column;
     align-self: stretch;
     margin: 0;
     overflow: hidden;
@@ -1538,18 +1536,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 
 .contact-photo {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3 / 4;
+    height: 100%;
     object-fit: cover;
-}
-
-.contact-photo-caption {
-    padding: var(--spacing-md) var(--spacing-lg);
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
-    font-weight: 600;
-    line-height: 1.2;
-    color: var(--color-primary);
-    text-align: center;
+    object-position: center center;
 }
 
 .contact-form-title {
