@@ -1526,6 +1526,32 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     box-shadow: var(--shadow-lg);
 }
 
+.contact-photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.contact-photo-caption {
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--color-primary);
+    text-align: center;
+}
+
 .contact-form-title {
     margin-bottom: var(--spacing-lg);
     font-family: var(--font-heading);
