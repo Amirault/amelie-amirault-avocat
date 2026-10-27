@@ -1527,7 +1527,9 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .contact-photo-wrapper {
+    position: relative;
     align-self: stretch;
+    min-height: 0;
     margin: 0;
     overflow: hidden;
     background-color: var(--color-white);
@@ -1535,8 +1537,9 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .contact-photo {
+    position: absolute;
+    inset: 0;
     width: 100%;
-    aspect-ratio: 3 / 4;
     height: 100%;
     object-fit: cover;
     object-position: center center;
@@ -2022,6 +2025,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
         margin: 0;
     }
     
+    .contact-photo-wrapper {
+        aspect-ratio: 3 / 4;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
     }
