@@ -385,6 +385,36 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
     pointer-events: none;
 }
 
+/* Bandeau ivoire central du hero */
+.hero-center-band {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: clamp(30rem, 66vh, 42rem);
+    transform: translateY(-50%);
+    background-color: rgba(248, 245, 237, 0.94);
+    border-top: 1px solid rgba(201, 169, 97, 0.3);
+    border-bottom: 1px solid rgba(201, 169, 97, 0.22);
+    box-shadow: 0 12px 35px rgba(15, 20, 25, 0.12);
+    z-index: 3;
+    pointer-events: none;
+}
+
+body:has(.hero-center-band) .hero-tagline {
+    color: var(--color-primary);
+}
+
+body:has(.hero-center-band) .hero-cta .btn-secondary {
+    color: var(--color-primary);
+    border-color: rgba(26, 38, 52, 0.35);
+}
+
+body:has(.hero-center-band) .hero-cta .btn-secondary:hover {
+    background-color: rgba(26, 38, 52, 0.08);
+    border-color: var(--color-primary);
+}
+
 .hero-logo-title {
     position: relative;
     z-index: 10;
@@ -557,16 +587,6 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
         width: 100%;
         max-width: 300px;
     }
-}
-
-/* ===================================
-   Bandeau ivoire
-   =================================== */
-.hero-divider {
-    height: clamp(2rem, 4vw, 3.5rem);
-    background-color: #f8f5ed;
-    border-top: 1px solid rgba(201, 169, 97, 0.18);
-    border-bottom: 1px solid rgba(201, 169, 97, 0.12);
 }
 
 /* ===================================
