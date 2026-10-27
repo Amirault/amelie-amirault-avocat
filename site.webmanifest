@@ -1,6 +1,9 @@
 {
   "name": "AMIRAULT AVOCATS",
   "short_name": "AMIRAULT",
+  "description": "Cabinet d'avocats en droit du travail à Fort-de-France, Martinique",
+  "lang": "fr-FR",
+  "start_url": "/",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

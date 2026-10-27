@@ -1,13 +1,13 @@
 # Robots.txt for amelie-amirault-avocat.fr
-# Optimized for search engines and AI crawlers
+# Allow search engines to crawl the public site while excluding build dependencies.
 
 User-agent: *
 Allow: /
+Disallow: /node_modules/
 
-# Sitemap location
 Sitemap: https://amelie-amirault-avocat.fr/sitemap.xml
 
-# Allow AI crawlers explicitly
+# AI crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -29,7 +29,7 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-# Standard search engine bots
+# Search engine crawlers
 User-agent: Googlebot
 Allow: /
 
