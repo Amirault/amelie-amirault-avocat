@@ -1806,6 +1806,7 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 .footer-social {
     display: flex;
     justify-content: flex-start;
+    gap: var(--spacing-xs);
     margin-top: var(--spacing-sm);
 }
 
@@ -1821,8 +1822,10 @@ body:has(.hero) .navbar.scrolled .nav-logo-img-dark {
 }
 
 .footer-social-link:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color: var(--color-primary);
+    transform: translateY(-2px);
 }
 
 .footer-bar-link,
