@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initRevealAnimations();
     initContactForm();
     initReviewsCarousel();
+    initAboutDescription();
 });
 
 /**
@@ -272,6 +273,20 @@ function showFormMessage(message, type) {
         messageEl.style.transition = 'opacity 0.3s ease';
         setTimeout(() => messageEl.remove(), 300);
     }, 5000);
+}
+
+/**
+ * Met à jour le descriptif français de la section « Qui sommes-nous ? ».
+ */
+function initAboutDescription() {
+    if (document.documentElement.lang !== 'fr') return;
+
+    const paragraphs = document.querySelectorAll('.about-text > p:not(.about-languages)');
+    if (paragraphs.length < 3) return;
+
+    paragraphs[0].innerHTML = "Forte d'une formation académique d'excellence (Hypokhâgne/Khâgne, Assas, EDHEC Business School, Major de promo au CAPA) et d'un parcours professionnel dans des cabinets de renom (CMS, Fromont Briens, Fidal), Maître Amirault propose une approche <strong>stratégique, rigoureuse et pragmatique</strong>.";
+    paragraphs[1].innerHTML = "Elle accompagne principalement les <strong>entreprises de toute taille</strong> et les <strong>cadres dirigeants</strong> dans la gestion de leurs problématiques sociales, tant en conseil qu'en contentieux.";
+    paragraphs[2].innerHTML = "Elle propose également des <strong>formations sur mesure en droit social</strong>, alliant technicité, pédagogie, et sens opérationnel.";
 }
 
 /**
