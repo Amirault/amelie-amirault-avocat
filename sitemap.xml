@@ -2,15 +2,87 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://amiraultavocats.fr/</loc>
-        <lastmod>2026-10-27</lastmod>
+        <lastmod>2026-10-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://amiraultavocats.fr/en.html</loc>
-        <lastmod>2026-10-27</lastmod>
+        <lastmod>2026-10-28</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-contrat-de-travail.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-licenciement.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-sante-au-travail.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-harcelement-discrimination.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-conseil-aux-entreprises.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-securite-sociale-urssaf.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-employment-contracts.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-dismissal.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-workplace-health.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-harassment-discrimination.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-business-advice.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://amiraultavocats.fr/expertise-social-security-urssaf.html</loc>
+        <lastmod>2026-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://amiraultavocats.fr/mentions-legales.html</loc>
