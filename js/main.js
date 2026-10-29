@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNavLink();
     initMobileMenu();
     initSmoothScroll();
+    initArticlesScrollBehavior();
     initRevealAnimations();
     initContactForm();
     initReviewsCarousel();
@@ -140,6 +141,20 @@ function initSmoothScroll() {
                     behavior: 'smooth'
                 });
             }
+        });
+    });
+}
+
+/**
+ * Réduit l'accrochage obligatoire du carrousel Articles.
+ * Le scroll horizontal reste disponible, mais ne peut plus imposer
+ * un arrêt brutal entre deux cartes lorsque le geste est terminé.
+ */
+function initArticlesScrollBehavior() {
+    document.querySelectorAll('.articles-track').forEach(track => {
+        track.style.scrollSnapType = 'x proximity';
+        track.querySelectorAll('.article-card').forEach(card => {
+            card.style.scrollSnapStop = 'normal';
         });
     });
 }
